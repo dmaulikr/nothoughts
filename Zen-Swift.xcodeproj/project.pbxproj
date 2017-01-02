@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9641E1AE65800777244 /* AppDelegate.swift */; };
+		8CACB9671E1AE65800777244 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9661E1AE65800777244 /* ViewController.swift */; };
+		8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB9681E1AE65800777244 /* Main.storyboard */; };
+		8CACB96C1E1AE65800777244 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB96B1E1AE65800777244 /* Assets.xcassets */; };
+		8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */; };
+		8CACB97A1E1AE65800777244 /* Zen_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9791E1AE65800777244 /* Zen_SwiftTests.swift */; };
+		8CACB9851E1AE65800777244 /* Zen_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CACB9761E1AE65800777244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CACB9591E1AE65800777244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CACB9601E1AE65800777244;
+			remoteInfo = "Zen-Swift";
+		};
+		8CACB9811E1AE65800777244 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CACB9591E1AE65800777244 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CACB9601E1AE65800777244;
+			remoteInfo = "Zen-Swift";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8CACB9611E1AE65800777244 /* Zen-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zen-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CACB9641E1AE65800777244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CACB9661E1AE65800777244 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CACB9691E1AE65800777244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CACB96B1E1AE65800777244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CACB96E1E1AE65800777244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CACB9701E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CACB9751E1AE65800777244 /* Zen-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zen-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CACB9791E1AE65800777244 /* Zen_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zen_SwiftTests.swift; sourceTree = "<group>"; };
+		8CACB97B1E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CACB9801E1AE65800777244 /* Zen-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zen-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zen_SwiftUITests.swift; sourceTree = "<group>"; };
+		8CACB9861E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CACB95E1E1AE65800777244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CACB9721E1AE65800777244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CACB97D1E1AE65800777244 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CACB9581E1AE65800777244 = {
+			isa = PBXGroup;
+			children = (
+				8CACB9631E1AE65800777244 /* Zen-Swift */,
+				8CACB9781E1AE65800777244 /* Zen-SwiftTests */,
+				8CACB9831E1AE65800777244 /* Zen-SwiftUITests */,
+				8CACB9621E1AE65800777244 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CACB9621E1AE65800777244 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CACB9611E1AE65800777244 /* Zen-Swift.app */,
+				8CACB9751E1AE65800777244 /* Zen-SwiftTests.xctest */,
+				8CACB9801E1AE65800777244 /* Zen-SwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CACB9631E1AE65800777244 /* Zen-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				8CACB9641E1AE65800777244 /* AppDelegate.swift */,
+				8CACB9661E1AE65800777244 /* ViewController.swift */,
+				8CACB9681E1AE65800777244 /* Main.storyboard */,
+				8CACB96B1E1AE65800777244 /* Assets.xcassets */,
+				8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */,
+				8CACB9701E1AE65800777244 /* Info.plist */,
+			);
+			path = "Zen-Swift";
+			sourceTree = "<group>";
+		};
+		8CACB9781E1AE65800777244 /* Zen-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CACB9791E1AE65800777244 /* Zen_SwiftTests.swift */,
+				8CACB97B1E1AE65800777244 /* Info.plist */,
+			);
+			path = "Zen-SwiftTests";
+			sourceTree = "<group>";
+		};
+		8CACB9831E1AE65800777244 /* Zen-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */,
+				8CACB9861E1AE65800777244 /* Info.plist */,
+			);
+			path = "Zen-SwiftUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CACB9601E1AE65800777244 /* Zen-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CACB9891E1AE65800777244 /* Build configuration list for PBXNativeTarget "Zen-Swift" */;
+			buildPhases = (
+				8CACB95D1E1AE65800777244 /* Sources */,
+				8CACB95E1E1AE65800777244 /* Frameworks */,
+				8CACB95F1E1AE65800777244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zen-Swift";
+			productName = "Zen-Swift";
+			productReference = 8CACB9611E1AE65800777244 /* Zen-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CACB9741E1AE65800777244 /* Zen-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CACB98C1E1AE65800777244 /* Build configuration list for PBXNativeTarget "Zen-SwiftTests" */;
+			buildPhases = (
+				8CACB9711E1AE65800777244 /* Sources */,
+				8CACB9721E1AE65800777244 /* Frameworks */,
+				8CACB9731E1AE65800777244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CACB9771E1AE65800777244 /* PBXTargetDependency */,
+			);
+			name = "Zen-SwiftTests";
+			productName = "Zen-SwiftTests";
+			productReference = 8CACB9751E1AE65800777244 /* Zen-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CACB97F1E1AE65800777244 /* Zen-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CACB98F1E1AE65800777244 /* Build configuration list for PBXNativeTarget "Zen-SwiftUITests" */;
+			buildPhases = (
+				8CACB97C1E1AE65800777244 /* Sources */,
+				8CACB97D1E1AE65800777244 /* Frameworks */,
+				8CACB97E1E1AE65800777244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CACB9821E1AE65800777244 /* PBXTargetDependency */,
+			);
+			name = "Zen-SwiftUITests";
+			productName = "Zen-SwiftUITests";
+			productReference = 8CACB9801E1AE65800777244 /* Zen-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CACB9591E1AE65800777244 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Ricardo Nazario";
+				TargetAttributes = {
+					8CACB9601E1AE65800777244 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = SGRW3864BW;
+						ProvisioningStyle = Automatic;
+					};
+					8CACB9741E1AE65800777244 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = SGRW3864BW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8CACB9601E1AE65800777244;
+					};
+					8CACB97F1E1AE65800777244 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = SGRW3864BW;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8CACB9601E1AE65800777244;
+					};
+				};
+			};
+			buildConfigurationList = 8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "Zen-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CACB9581E1AE65800777244;
+			productRefGroup = 8CACB9621E1AE65800777244 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CACB9601E1AE65800777244 /* Zen-Swift */,
+				8CACB9741E1AE65800777244 /* Zen-SwiftTests */,
+				8CACB97F1E1AE65800777244 /* Zen-SwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CACB95F1E1AE65800777244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */,
+				8CACB96C1E1AE65800777244 /* Assets.xcassets in Resources */,
+				8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CACB9731E1AE65800777244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CACB97E1E1AE65800777244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CACB95D1E1AE65800777244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CACB9671E1AE65800777244 /* ViewController.swift in Sources */,
+				8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CACB9711E1AE65800777244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CACB97A1E1AE65800777244 /* Zen_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CACB97C1E1AE65800777244 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CACB9851E1AE65800777244 /* Zen_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CACB9771E1AE65800777244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CACB9601E1AE65800777244 /* Zen-Swift */;
+			targetProxy = 8CACB9761E1AE65800777244 /* PBXContainerItemProxy */;
+		};
+		8CACB9821E1AE65800777244 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CACB9601E1AE65800777244 /* Zen-Swift */;
+			targetProxy = 8CACB9811E1AE65800777244 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CACB9681E1AE65800777244 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CACB9691E1AE65800777244 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CACB96E1E1AE65800777244 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CACB9871E1AE65800777244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CACB9881E1AE65800777244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CACB98A1E1AE65800777244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = "Zen-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8CACB98B1E1AE65800777244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = "Zen-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8CACB98D1E1AE65800777244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = "Zen-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zen-Swift.app/Zen-Swift";
+			};
+			name = Debug;
+		};
+		8CACB98E1E1AE65800777244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = "Zen-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zen-Swift.app/Zen-Swift";
+			};
+			name = Release;
+		};
+		8CACB9901E1AE65800777244 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = "Zen-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Zen-Swift";
+			};
+			name = Debug;
+		};
+		8CACB9911E1AE65800777244 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = SGRW3864BW;
+				INFOPLIST_FILE = "Zen-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Zen-Swift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "Zen-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CACB9871E1AE65800777244 /* Debug */,
+				8CACB9881E1AE65800777244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CACB9891E1AE65800777244 /* Build configuration list for PBXNativeTarget "Zen-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CACB98A1E1AE65800777244 /* Debug */,
+				8CACB98B1E1AE65800777244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8CACB98C1E1AE65800777244 /* Build configuration list for PBXNativeTarget "Zen-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CACB98D1E1AE65800777244 /* Debug */,
+				8CACB98E1E1AE65800777244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8CACB98F1E1AE65800777244 /* Build configuration list for PBXNativeTarget "Zen-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CACB9901E1AE65800777244 /* Debug */,
+				8CACB9911E1AE65800777244 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CACB9591E1AE65800777244 /* Project object */;
+}
