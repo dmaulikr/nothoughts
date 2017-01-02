@@ -24,6 +24,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="50g-R3-LIM">
                                 <rect key="frame" x="168" y="318" width="39" height="30"/>
                                 <state key="normal" title="Begin"/>
+                                <connections>
+                                    <action selector="beginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Thl-bS-exd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -39,10 +42,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Meditation View Controller-->
         <scene sceneID="Ku9-Un-gHW">
             <objects>
-                <viewController id="c9L-AL-6w8" sceneMemberID="viewController">
+                <viewController id="c9L-AL-6w8" customClass="MeditationViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="T1b-Fl-oaP"/>
                         <viewControllerLayoutGuide type="bottom" id="Pfj-Af-FYX"/>
@@ -55,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgR-Df-lva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="993" y="137"/>
+            <point key="canvasLocation" x="828" y="38"/>
         </scene>
     </scenes>
 </document>

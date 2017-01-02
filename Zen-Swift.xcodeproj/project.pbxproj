@@ -14,6 +14,9 @@
 		8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */; };
 		8CACB97A1E1AE65800777244 /* Zen_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9791E1AE65800777244 /* Zen_SwiftTests.swift */; };
 		8CACB9851E1AE65800777244 /* Zen_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */; };
+		8CACB9931E1AE71900777244 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9921E1AE71900777244 /* MeditationViewController.swift */; };
+		8CACB9951E1AE75C00777244 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; };
+		8CACB9961E1AE75C00777244 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		8CACB9971E1AE75C00777244 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8CACB9961E1AE75C00777244 /* AudioKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8CACB9611E1AE65800777244 /* Zen-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zen-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9641E1AE65800777244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +64,8 @@
 		8CACB9801E1AE65800777244 /* Zen-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zen-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zen_SwiftUITests.swift; sourceTree = "<group>"; };
 		8CACB9861E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CACB9921E1AE71900777244 /* MeditationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		8CACB9941E1AE75C00777244 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CACB9951E1AE75C00777244 /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +97,7 @@
 		8CACB9581E1AE65800777244 = {
 			isa = PBXGroup;
 			children = (
+				8CACB9941E1AE75C00777244 /* AudioKit.framework */,
 				8CACB9631E1AE65800777244 /* Zen-Swift */,
 				8CACB9781E1AE65800777244 /* Zen-SwiftTests */,
 				8CACB9831E1AE65800777244 /* Zen-SwiftUITests */,
@@ -99,6 +120,7 @@
 			children = (
 				8CACB9641E1AE65800777244 /* AppDelegate.swift */,
 				8CACB9661E1AE65800777244 /* InitialViewController.swift */,
+				8CACB9921E1AE71900777244 /* MeditationViewController.swift */,
 				8CACB9681E1AE65800777244 /* Main.storyboard */,
 				8CACB96B1E1AE65800777244 /* Assets.xcassets */,
 				8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */,
@@ -135,6 +157,7 @@
 				8CACB95D1E1AE65800777244 /* Sources */,
 				8CACB95E1E1AE65800777244 /* Frameworks */,
 				8CACB95F1E1AE65800777244 /* Resources */,
+				8CACB9971E1AE75C00777244 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +286,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */,
+				8CACB9931E1AE71900777244 /* MeditationViewController.swift in Sources */,
 				8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +440,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SGRW3864BW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Zen-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-Swift";
@@ -429,6 +457,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SGRW3864BW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Zen-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-Swift";

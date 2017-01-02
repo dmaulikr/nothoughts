@@ -10,6 +10,11 @@ import UIKit
 
 class InitialViewController: UIViewController {
 
+    @IBAction func beginPressed(_ sender: Any) {
+        
+        self.performSegue(withIdentifier: "MeditationSegue", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
