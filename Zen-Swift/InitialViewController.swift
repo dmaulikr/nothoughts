@@ -8,8 +8,11 @@
 
 import UIKit
 
+
 class InitialViewController: UIViewController {
 
+    @IBOutlet weak var textField: UITextField!
+    
     @IBAction func beginPressed(_ sender: Any) {
         
         self.performSegue(withIdentifier: "MeditationSegue", sender: self)
@@ -23,6 +26,18 @@ class InitialViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "MeditationSegue" {
+            let mvc = segue.destination as! MeditationViewController
+            
+            if (textField.text != nil) {
+                mvc.meditationTime = Double(textField.text!)!
+
+            }
+        }
     }
 
 
