@@ -18,6 +18,7 @@ class MeditationViewController: UIViewController {
     var envelope: AKAmplitudeEnvelope!
     var delay: AKDelay!
     var reverb: AKReverb!
+    var filter: AKLowPassFilter!
     
     @IBAction func endPressed(_ sender: Any) {
         
@@ -32,15 +33,20 @@ class MeditationViewController: UIViewController {
         // Init oscillator
         oscillator = AKOscillator()
         oscillator.stop()
-        oscillator.amplitude = 0.9
+        oscillator.amplitude = 0.95
         oscillator.frequency = random(300.0, 500.0)
         
+        // Init filter
+        filter = AKLowPassFilter(oscillator)
+        filter.stop()
+        filter.cutoffFrequency = 1000
+        
         // Init envelope
-        envelope = AKAmplitudeEnvelope(oscillator)
+        envelope = AKAmplitudeEnvelope(filter)
         envelope.stop()
         envelope.attackDuration = 0.05
         envelope.decayDuration = 0.1
-        envelope.sustainLevel = oscillator.amplitude
+        envelope.sustainLevel = 1.0
         envelope.releaseDuration = random(0.5, 0.8)
         
         // Init delay for chorusing
