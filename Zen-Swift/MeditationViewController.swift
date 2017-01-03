@@ -15,10 +15,11 @@ class MeditationViewController: UIViewController {
     var timeElapsed: Int = Int()
     
     var oscillator: AKOscillator!
+    var filter: AKLowPassFilter!
     var envelope: AKAmplitudeEnvelope!
     var delay: AKDelay!
     var reverb: AKReverb!
-    var filter: AKLowPassFilter!
+    var processor: AKDynamicsProcessor!
     
     @IBAction func endPressed(_ sender: Any) {
         
@@ -62,6 +63,12 @@ class MeditationViewController: UIViewController {
         reverb.dryWetMix = random(0.4, 0.7)
         reverb.loadFactoryPreset(AVAudioUnitReverbPreset.cathedral)
         
+        // Init dynamic
+        processor = AKDynamicsProcessor(reverb)
+        processor.stop()
+        processor.headRoom = 0.1
+        processor.masterGain = 40
+        
         // Start audio
         AudioKit.stop()
         AudioKit.output = reverb
@@ -70,6 +77,7 @@ class MeditationViewController: UIViewController {
         envelope.start()
         delay.start()
         reverb.start()
+        processor.start()
         
         Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: {(timer) in self.envelope.stop()})
     }
