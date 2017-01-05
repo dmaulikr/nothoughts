@@ -28,13 +28,6 @@
                                     <action selector="beginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Thl-bS-exd"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aE5-Xv-X5h">
-                                <rect key="frame" x="139" y="280" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -43,7 +36,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textField" destination="aE5-Xv-X5h" id="nbY-ve-6Xk"/>
                         <segue destination="c9L-AL-6w8" kind="presentation" identifier="MeditationSegue" modalTransitionStyle="crossDissolve" id="n0Y-C7-RHt"/>
                     </connections>
                 </viewController>
@@ -96,7 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgR-Df-lva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.60000000000002" y="93.103448275862078"/>
+            <point key="canvasLocation" x="914" y="137"/>
         </scene>
     </scenes>
 </document>

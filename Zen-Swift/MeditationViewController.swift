@@ -11,6 +11,7 @@ import AudioKit
 
 class MeditationViewController: UIViewController {
     
+    var backgroundTask: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
     var meditationTime: Double = Double()
     var timeElapsed: Int = Int()
     
@@ -28,6 +29,7 @@ class MeditationViewController: UIViewController {
         reverb.stop()
         self.dismiss(animated: true, completion: nil)
     }
+    
     
     func initializeBell() {
         
@@ -66,7 +68,7 @@ class MeditationViewController: UIViewController {
         // Init dynamic
         processor = AKDynamicsProcessor(reverb)
         processor.stop()
-        processor.headRoom = 0.1
+        processor.headRoom = 0.5
         processor.masterGain = 40
         
         // Start audio
@@ -85,6 +87,8 @@ class MeditationViewController: UIViewController {
     func meditation() {
         
         self.initializeBell()
+        UIApplication.shared.isIdleTimerDisabled = true
+
         
         //Init timer
         Timer.scheduledTimer(withTimeInterval: meditationTime, repeats: false, block: { (timer) in self.endMeditation()})
@@ -94,23 +98,22 @@ class MeditationViewController: UIViewController {
     func endMeditation() {
         
         self.initializeBell()
-        
-        
-        
+        UIApplication.shared.isIdleTimerDisabled = false
+
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.meditationTime = 600.0
         // Do any additional setup after loading the view.
-        Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false, block: { (timer) in self.meditation()})
+        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in self.meditation()})
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -121,5 +124,4 @@ class MeditationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

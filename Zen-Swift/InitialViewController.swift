@@ -11,7 +11,6 @@ import UIKit
 
 class InitialViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
     
     @IBAction func beginPressed(_ sender: Any) {
         
@@ -31,12 +30,9 @@ class InitialViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "MeditationSegue" {
-            let mvc = segue.destination as! MeditationViewController
+//            let mvc = segue.destination as! MeditationViewController
             
-            if (textField.text != nil) {
-                mvc.meditationTime = Double(textField.text!)!
-
-            }
+            
         }
     }
 
