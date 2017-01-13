@@ -9,8 +9,11 @@
 import UIKit
 
 
-class InitialViewController: UIViewController {
+class InitialViewController: UIViewController  {
 
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    
     
     @IBAction func beginPressed(_ sender: Any) {
         
@@ -20,6 +23,7 @@ class InitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +39,4 @@ class InitialViewController: UIViewController {
             
         }
     }
-
-
 }
-

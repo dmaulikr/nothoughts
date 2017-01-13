@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C26EE5D1E27F4A700328119 /* InfiniteHorizontalCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C26EE5C1E27F4A700328119 /* InfiniteHorizontalCollectionViewController.swift */; };
+		8C4E1E681E28471F00096DC1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4E1E671E28471F00096DC1 /* CollectionViewCell.swift */; };
 		8CA3FFEB1E1DC0A000D05750 /* Bell Tree 04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FFE71E1DC0A000D05750 /* Bell Tree 04.wav */; };
 		8CA3FFEC1E1DC0A000D05750 /* Bell Tree 03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FFE81E1DC0A000D05750 /* Bell Tree 03.wav */; };
 		8CA3FFED1E1DC0A000D05750 /* Bell Tree 02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FFE91E1DC0A000D05750 /* Bell Tree 02.wav */; };
@@ -55,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8C26EE5C1E27F4A700328119 /* InfiniteHorizontalCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfiniteHorizontalCollectionViewController.swift; sourceTree = "<group>"; };
+		8C4E1E671E28471F00096DC1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../CollectionViewCell.swift; sourceTree = "<group>"; };
 		8CA3FFE71E1DC0A000D05750 /* Bell Tree 04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell Tree 04.wav"; sourceTree = "<group>"; };
 		8CA3FFE81E1DC0A000D05750 /* Bell Tree 03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell Tree 03.wav"; sourceTree = "<group>"; };
 		8CA3FFE91E1DC0A000D05750 /* Bell Tree 02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell Tree 02.wav"; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 			children = (
 				8CACB9641E1AE65800777244 /* AppDelegate.swift */,
 				8CACB9661E1AE65800777244 /* InitialViewController.swift */,
+				8C26EE5C1E27F4A700328119 /* InfiniteHorizontalCollectionViewController.swift */,
+				8C4E1E671E28471F00096DC1 /* CollectionViewCell.swift */,
 				8CACB9921E1AE71900777244 /* MeditationViewController.swift */,
 				8CACB9681E1AE65800777244 /* Main.storyboard */,
 				8CACB96B1E1AE65800777244 /* Assets.xcassets */,
@@ -306,8 +312,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C4E1E681E28471F00096DC1 /* CollectionViewCell.swift in Sources */,
 				8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */,
 				8CACB9931E1AE71900777244 /* MeditationViewController.swift in Sources */,
+				8C26EE5D1E27F4A700328119 /* InfiniteHorizontalCollectionViewController.swift in Sources */,
 				8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
