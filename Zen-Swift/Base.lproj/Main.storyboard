@@ -10,6 +10,51 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Page View Controller-->
+        <scene sceneID="fiG-Ia-nLF">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="3Lq-Mi-I6V" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ket-aQ-ijM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137" y="-541"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="nnw-Nz-lQs">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" id="Oie-d0-Jcw" customClass="PageContentViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wjh-tw-fCi"/>
+                        <viewControllerLayoutGuide type="bottom" id="wVJ-7y-pqH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fsb-Lk-FD3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgr-FZ-ZrW">
+                                <rect key="frame" x="16" y="0.0" width="343" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="gH7-9y-kVX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mgr-FZ-ZrW" firstAttribute="top" secondItem="Fsb-Lk-FD3" secondAttribute="topMargin" id="Hqw-i2-C3S"/>
+                            <constraint firstItem="Mgr-FZ-ZrW" firstAttribute="trailing" secondItem="Fsb-Lk-FD3" secondAttribute="trailingMargin" id="a22-Pf-arB"/>
+                            <constraint firstItem="Mgr-FZ-ZrW" firstAttribute="leading" secondItem="Fsb-Lk-FD3" secondAttribute="leadingMargin" id="jUa-7C-pUj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lessonLabel" destination="Mgr-FZ-ZrW" id="0Fo-k3-t6O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="45H-n9-5Nu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="796" y="-541.07946026986508"/>
+        </scene>
         <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -29,38 +74,19 @@
                                     <action selector="beginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Thl-bS-exd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Right View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1z-Fz-tpD">
-                                <rect key="frame" x="16" y="323" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="50g-R3-LIM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Byp-xX-50t"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="W1z-Fz-tpD" secondAttribute="leading" id="Lf1-mV-tVk"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="W1z-Fz-tpD" secondAttribute="trailing" id="Y0H-ci-eT2"/>
                             <constraint firstItem="50g-R3-LIM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="298.5" id="fQ0-wa-vqZ"/>
-                            <constraint firstItem="W1z-Fz-tpD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nRc-eL-tAh"/>
                         </constraints>
-                        <connections>
-                            <outletCollection property="gestureRecognizers" destination="3Xh-Vn-Vrm" appends="YES" id="HJf-bR-P3L"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="lessonLabel" destination="W1z-Fz-tpD" id="kfM-Nh-lcc"/>
-                        <outlet property="swipeGestureRecognizer" destination="3Xh-Vn-Vrm" id="OtM-JS-LAY"/>
                         <segue destination="c9L-AL-6w8" kind="presentation" identifier="MeditationSegue" modalTransitionStyle="crossDissolve" id="n0Y-C7-RHt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="right" id="3Xh-Vn-Vrm">
-                    <connections>
-                        <action selector="swipe:" destination="BYZ-38-t0r" id="sJ5-hu-yZa"/>
-                    </connections>
-                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
