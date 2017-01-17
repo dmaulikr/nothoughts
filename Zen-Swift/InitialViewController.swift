@@ -68,6 +68,7 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
         
         contentViewController.lessonTitle = pathArray[index]
         contentViewController.index = index
+        pageIndex = index
         
         return contentViewController
     }
@@ -96,6 +97,19 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        let gradient: CAGradientLayer = CAGradientLayer()
+        
+        let topColor = UIColor(red: 187/255, green: 217/255, blue: 220/255, alpha: 1.0)
+        let bottomColor = UIColor(red: 133/255, green: 158/255, blue: 139/255, alpha: 1.0)
+        
+        gradient.colors = [topColor.cgColor, bottomColor.cgColor]
+//        gradient.locations = [0.0 , 1.0]
+        gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
+        gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+        gradient.frame = self.view.frame
+        
+        self.view.layer.insertSublayer(gradient, at: 0)
+        
         self.presentPageController()
     }
 
@@ -107,9 +121,8 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "MeditationSegue" {
-//            let mvc = segue.destination as! MeditationViewController
-            
-            
+            let mvc = segue.destination as! MeditationViewController
+            mvc.lessonTitle = pathArray[pageIndex]
         }
     }
 }

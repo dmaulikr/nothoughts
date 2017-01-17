@@ -11,6 +11,8 @@ import AudioKit
 
 class MeditationViewController: UIViewController {
     
+    var lessonTitle: String!
+    
     var backgroundTask: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
     var meditationTime: Double = Double()
     var timeElapsed: Int = Int()
@@ -22,14 +24,21 @@ class MeditationViewController: UIViewController {
     var reverb: AKReverb!
     var processor: AKDynamicsProcessor!
     
+    @IBOutlet weak var timerController: SegmentedController!
+    @IBOutlet weak var bellController: SegmentedController!
+    
     @IBAction func endPressed(_ sender: Any) {
         
-        oscillator.stop()
-        delay.stop()
-        reverb.stop()
+//        oscillator.stop()
+//        delay.stop()
+//        reverb.stop()
         self.dismiss(animated: true, completion: nil)
     }
     
+    @IBAction func backPressed(_ sender: Any) {
+        
+        self.dismiss(animated: true, completion: nil)
+    }
     
     func initializeBell() {
         
@@ -107,12 +116,19 @@ class MeditationViewController: UIViewController {
 
         self.meditationTime = 600.0
         // Do any additional setup after loading the view.
-        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in self.meditation()})
+        timerController.items = ["10", "15", "20", "30", "45", "60"]
+        bellController.items = ["None", "1/4", "1/3", "1/2"]
+                
+//        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in self.meditation()})
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 
     /*

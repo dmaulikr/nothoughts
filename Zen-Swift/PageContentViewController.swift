@@ -21,8 +21,6 @@ class PageContentViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         lessonLabel.text = lessonTitle
-        print(index)
-        self.view.backgroundColor = #colorLiteral(red: 0, green: 0.8980433345, blue: 0.8181681037, alpha: 1)
     }
 
     override func didReceiveMemoryWarning() {
