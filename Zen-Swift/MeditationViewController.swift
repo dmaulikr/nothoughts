@@ -26,6 +26,7 @@ class MeditationViewController: UIViewController {
     
     @IBOutlet weak var timerController: SegmentedController!
     @IBOutlet weak var bellController: SegmentedController!
+    @IBOutlet weak var dimmerController: SegmentedController!
     
     @IBAction func endPressed(_ sender: Any) {
         
@@ -118,6 +119,20 @@ class MeditationViewController: UIViewController {
         // Do any additional setup after loading the view.
         timerController.items = ["10", "15", "20", "30", "45", "60"]
         bellController.items = ["None", "1/4", "1/3", "1/2"]
+        dimmerController.items = ["Yes", "No"]
+        
+        let gradient: CAGradientLayer = CAGradientLayer()
+        
+        let topColor = UIColor(red: 187/255, green: 217/255, blue: 220/255, alpha: 1.0)
+        let bottomColor = UIColor(red: 70/255, green: 217/255, blue: 212/255, alpha: 1.0)
+        
+        gradient.colors = [topColor.cgColor, bottomColor.cgColor]
+        //        gradient.locations = [0.0 , 1.0]
+        gradient.startPoint = CGPoint(x: 1.0, y: 0.0)
+        gradient.endPoint = CGPoint(x: 0.0, y: 1.0)
+        gradient.frame = self.view.frame
+        
+        self.view.layer.insertSublayer(gradient, at: 0)
                 
 //        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in self.meditation()})
     }

@@ -100,7 +100,7 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
         let gradient: CAGradientLayer = CAGradientLayer()
         
         let topColor = UIColor(red: 187/255, green: 217/255, blue: 220/255, alpha: 1.0)
-        let bottomColor = UIColor(red: 133/255, green: 158/255, blue: 139/255, alpha: 1.0)
+        let bottomColor = UIColor(red: 70/255, green: 217/255, blue: 212/255, alpha: 1.0)
         
         gradient.colors = [topColor.cgColor, bottomColor.cgColor]
 //        gradient.locations = [0.0 , 1.0]

@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3742271E2D199D00901883 /* SegmentedController.swift */; };
 		8C8BE63C1E2A83DE00C203D5 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8BE63B1E2A83DE00C203D5 /* PageContentViewController.swift */; };
-		8CA3FFEB1E1DC0A000D05750 /* Bell Tree 04.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FFE71E1DC0A000D05750 /* Bell Tree 04.wav */; };
-		8CA3FFEC1E1DC0A000D05750 /* Bell Tree 03.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FFE81E1DC0A000D05750 /* Bell Tree 03.wav */; };
-		8CA3FFED1E1DC0A000D05750 /* Bell Tree 02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FFE91E1DC0A000D05750 /* Bell Tree 02.wav */; };
-		8CA3FFEE1E1DC0A000D05750 /* Bell Tree 01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CA3FFEA1E1DC0A000D05750 /* Bell Tree 01.wav */; };
 		8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9641E1AE65800777244 /* AppDelegate.swift */; };
 		8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9661E1AE65800777244 /* InitialViewController.swift */; };
 		8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB9681E1AE65800777244 /* Main.storyboard */; };
@@ -59,10 +55,6 @@
 /* Begin PBXFileReference section */
 		8C3742271E2D199D00901883 /* SegmentedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
 		8C8BE63B1E2A83DE00C203D5 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
-		8CA3FFE71E1DC0A000D05750 /* Bell Tree 04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell Tree 04.wav"; sourceTree = "<group>"; };
-		8CA3FFE81E1DC0A000D05750 /* Bell Tree 03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell Tree 03.wav"; sourceTree = "<group>"; };
-		8CA3FFE91E1DC0A000D05750 /* Bell Tree 02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell Tree 02.wav"; sourceTree = "<group>"; };
-		8CA3FFEA1E1DC0A000D05750 /* Bell Tree 01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "Bell Tree 01.wav"; sourceTree = "<group>"; };
 		8CACB9611E1AE65800777244 /* Zen-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zen-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9641E1AE65800777244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CACB9661E1AE65800777244 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -114,10 +106,6 @@
 				8CACB9781E1AE65800777244 /* Zen-SwiftTests */,
 				8CACB9831E1AE65800777244 /* Zen-SwiftUITests */,
 				8CACB9621E1AE65800777244 /* Products */,
-				8CA3FFE71E1DC0A000D05750 /* Bell Tree 04.wav */,
-				8CA3FFE81E1DC0A000D05750 /* Bell Tree 03.wav */,
-				8CA3FFE91E1DC0A000D05750 /* Bell Tree 02.wav */,
-				8CA3FFEA1E1DC0A000D05750 /* Bell Tree 01.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -281,13 +269,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA3FFEC1E1DC0A000D05750 /* Bell Tree 03.wav in Resources */,
 				8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */,
 				8CACB96C1E1AE65800777244 /* Assets.xcassets in Resources */,
-				8CA3FFED1E1DC0A000D05750 /* Bell Tree 02.wav in Resources */,
 				8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */,
-				8CA3FFEE1E1DC0A000D05750 /* Bell Tree 01.wav in Resources */,
-				8CA3FFEB1E1DC0A000D05750 /* Bell Tree 04.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
