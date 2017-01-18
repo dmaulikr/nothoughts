@@ -16,9 +16,10 @@
 		8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */; };
 		8CACB97A1E1AE65800777244 /* Zen_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9791E1AE65800777244 /* Zen_SwiftTests.swift */; };
 		8CACB9851E1AE65800777244 /* Zen_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */; };
-		8CACB9931E1AE71900777244 /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9921E1AE71900777244 /* MeditationViewController.swift */; };
+		8CACB9931E1AE71900777244 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9921E1AE71900777244 /* LessonViewController.swift */; };
 		8CACB9951E1AE75C00777244 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; };
 		8CACB9961E1AE75C00777244 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8CD171AB1E2FC4F000BF3BCD /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +69,9 @@
 		8CACB9801E1AE65800777244 /* Zen-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zen-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zen_SwiftUITests.swift; sourceTree = "<group>"; };
 		8CACB9861E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CACB9921E1AE71900777244 /* MeditationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
+		8CACB9921E1AE71900777244 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		8CACB9941E1AE75C00777244 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
+		8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +127,8 @@
 				8CACB9641E1AE65800777244 /* AppDelegate.swift */,
 				8CACB9661E1AE65800777244 /* InitialViewController.swift */,
 				8C8BE63B1E2A83DE00C203D5 /* PageContentViewController.swift */,
-				8CACB9921E1AE71900777244 /* MeditationViewController.swift */,
+				8CACB9921E1AE71900777244 /* LessonViewController.swift */,
+				8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */,
 				8C3742271E2D199D00901883 /* SegmentedController.swift */,
 				8CACB9681E1AE65800777244 /* Main.storyboard */,
 				8CACB96B1E1AE65800777244 /* Assets.xcassets */,
@@ -298,8 +301,9 @@
 			files = (
 				8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */,
 				8C8BE63C1E2A83DE00C203D5 /* PageContentViewController.swift in Sources */,
-				8CACB9931E1AE71900777244 /* MeditationViewController.swift in Sources */,
+				8CACB9931E1AE71900777244 /* LessonViewController.swift in Sources */,
 				8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */,
+				8CD171AB1E2FC4F000BF3BCD /* MeditationViewController.swift in Sources */,
 				8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

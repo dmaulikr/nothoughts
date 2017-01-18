@@ -2,7 +2,7 @@
 //  MeditationViewController.swift
 //  Zen-Swift
 //
-//  Created by Ricardo Nazario on 1/2/17.
+//  Created by Ricardo Nazario on 1/18/17.
 //  Copyright © 2017 Ricardo Nazario. All rights reserved.
 //
 
@@ -11,11 +11,10 @@ import AudioKit
 
 class MeditationViewController: UIViewController {
     
-    var lessonTitle: String!
+    var meditationTime: Double!
+    var bellIntervals: Double!
     
     var backgroundTask: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
-    var meditationTime: Double = Double()
-    var timeElapsed: Int = Int()
     
     var oscillator: AKOscillator!
     var filter: AKLowPassFilter!
@@ -24,20 +23,11 @@ class MeditationViewController: UIViewController {
     var reverb: AKReverb!
     var processor: AKDynamicsProcessor!
     
-    @IBOutlet weak var timerController: SegmentedController!
-    @IBOutlet weak var bellController: SegmentedController!
-    @IBOutlet weak var dimmerController: SegmentedController!
-    
-    @IBAction func endPressed(_ sender: Any) {
+    @IBAction func endEarlyPressed(_ sender: Any) {
         
 //        oscillator.stop()
 //        delay.stop()
 //        reverb.stop()
-        self.dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func backPressed(_ sender: Any) {
-        
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -93,57 +83,43 @@ class MeditationViewController: UIViewController {
         
         Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: {(timer) in self.envelope.stop()})
     }
-    
+
     func meditation() {
         
         self.initializeBell()
         UIApplication.shared.isIdleTimerDisabled = true
-
         
         //Init timer
         Timer.scheduledTimer(withTimeInterval: meditationTime, repeats: false, block: { (timer) in self.endMeditation()})
-        
     }
     
     func endMeditation() {
         
         self.initializeBell()
         UIApplication.shared.isIdleTimerDisabled = false
-
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.meditationTime = 600.0
-        // Do any additional setup after loading the view.
-        timerController.items = ["10", "15", "20", "30", "45", "60"]
-        bellController.items = ["None", "1/4", "1/3", "1/2"]
-        dimmerController.items = ["Yes", "No"]
         
+        // Do any additional setup after loading the view.
         let gradient: CAGradientLayer = CAGradientLayer()
         
         let topColor = UIColor(red: 187/255, green: 217/255, blue: 220/255, alpha: 1.0)
         let bottomColor = UIColor(red: 70/255, green: 217/255, blue: 212/255, alpha: 1.0)
         
         gradient.colors = [topColor.cgColor, bottomColor.cgColor]
-        //        gradient.locations = [0.0 , 1.0]
+        gradient.locations = [0.0 , 1.0]
         gradient.startPoint = CGPoint(x: 1.0, y: 0.0)
         gradient.endPoint = CGPoint(x: 0.0, y: 1.0)
         gradient.frame = self.view.frame
         
-        self.view.layer.insertSublayer(gradient, at: 0)
-                
 //        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in self.meditation()})
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override var prefersStatusBarHidden: Bool {
-        return true
     }
 
     /*
@@ -155,4 +131,5 @@ class MeditationViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+
 }

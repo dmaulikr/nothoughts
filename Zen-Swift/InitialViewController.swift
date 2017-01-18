@@ -120,9 +120,9 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        if segue.identifier == "MeditationSegue" {
-            let mvc = segue.destination as! MeditationViewController
-            mvc.lessonTitle = pathArray[pageIndex]
+        if segue.identifier == "LessonSegue" {
+            let lvc = segue.destination as! LessonViewController
+            lvc.lessonTitle = pathArray[pageIndex]
         }
     }
 }
