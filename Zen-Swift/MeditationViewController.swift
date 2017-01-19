@@ -23,11 +23,28 @@ class MeditationViewController: UIViewController {
     var reverb: AKReverb!
     var processor: AKDynamicsProcessor!
     
+    var countDownTime = 5
+    
+    var countDownTimer: Timer!
+    var meditationTimer: Timer!
+    var intervalTimer: Timer!
+    
+    @IBOutlet weak var countDownLabel: UILabel!
+    
     @IBAction func endEarlyPressed(_ sender: Any) {
         
 //        oscillator.stop()
 //        delay.stop()
 //        reverb.stop()
+        
+        if (countDownTimer != nil) {
+            countDownTimer.invalidate()
+        }
+        
+        if (meditationTimer != nil) {
+            meditationTimer.invalidate()
+        }
+        
         self.dismiss(animated: true, completion: nil)
     }
     
@@ -83,14 +100,61 @@ class MeditationViewController: UIViewController {
         
         Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: {(timer) in self.envelope.stop()})
     }
+    
+    func warmUpCountDown() {
+        
+        countDownLabel.text = String(countDownTime)
+        
+        
+        self.countDownTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true, block: { (timer) in
+            
+            self.countDownTime -= 1
+            self.countDownLabel.text = String(self.countDownTime)
+            
+            if self.countDownTime < 0 {
+                
+                self.countDownTimer.invalidate()
+                self.countDownLabel.isHidden = true
+                
+                self.meditation()
+            }
+        })
+        
+    }
 
     func meditation() {
         
         self.initializeBell()
         UIApplication.shared.isIdleTimerDisabled = true
         
+        print(meditationTime)
+        print(bellIntervals)
+        
+        if bellIntervals > 0 {
+            
+            let numberOfBells = Int(meditationTime / bellIntervals)
+            var bellNumber = 0
+            
+            // Interval bells timer
+            self.intervalTimer = Timer.scheduledTimer(withTimeInterval: bellIntervals, repeats: true, block: { (timer) in
+                
+                self.initializeBell()
+                bellNumber += 1
+                
+                if bellNumber == numberOfBells {
+                    
+                    self.intervalTimer.invalidate()
+                    
+                }
+            })
+        }
+
+        
         //Init timer
-        Timer.scheduledTimer(withTimeInterval: meditationTime, repeats: false, block: { (timer) in self.endMeditation()})
+        self.meditationTimer = Timer.scheduledTimer(withTimeInterval: meditationTime, repeats: false, block: { (timer) in
+            self.endMeditation()
+        })
+        
     }
     
     func endMeditation() {
@@ -113,8 +177,15 @@ class MeditationViewController: UIViewController {
         gradient.startPoint = CGPoint(x: 1.0, y: 0.0)
         gradient.endPoint = CGPoint(x: 0.0, y: 1.0)
         gradient.frame = self.view.frame
+        self.view.layer.insertSublayer(gradient, at: 0)
+        
+        warmUpCountDown()
         
 //        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in self.meditation()})
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
     }
 
     override func didReceiveMemoryWarning() {

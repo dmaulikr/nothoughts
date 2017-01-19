@@ -113,10 +113,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-bO-gJM">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVO-zC-veC" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
+                                <rect key="frame" x="85" y="453" width="274" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="1xW-cp-2GT"/>
+                                    <constraint firstAttribute="height" constant="30" id="9Z3-El-xrI"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="Sku-EL-1UI"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-eB-RDc" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
+                                <rect key="frame" x="85" y="491" width="274" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="EZL-zK-7Xa"/>
+                                    <constraint firstAttribute="height" constant="30" id="pnL-lq-yp8"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="bellControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="i0d-tZ-gkB"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVw-y5-W2X">
+                                <rect key="frame" x="16" y="458" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-oz-G9I">
+                                <rect key="frame" x="16" y="496" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-bO-gJM">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="0.25" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0JV-tp-zXY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Meditate">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -161,55 +195,30 @@
                                     <constraint firstAttribute="height" constant="420" id="pqy-3w-QSK"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meditate for 30 minutes with a bell every 10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4h-oe-1Ru">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk0-ww-LUO" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
+                                <rect key="frame" x="259" y="529" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4lK-KN-DWR"/>
+                                    <constraint firstAttribute="width" constant="100" id="Yxl-q1-L4r"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQp-lu-CdK">
+                                <rect key="frame" x="85" y="534" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditate for 30 minutes with a bell every 10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4h-oe-1Ru">
                                 <rect key="frame" x="16" y="567" width="343" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="wgH-OI-RSC"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iVO-zC-veC" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="85" y="453" width="274" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="Sku-EL-1UI"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-eB-RDc" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="85" y="491" width="274" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <action selector="bellControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="i0d-tZ-gkB"/>
-                                </connections>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVw-y5-W2X">
-                                <rect key="frame" x="16" y="458" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-oz-G9I">
-                                <rect key="frame" x="16" y="496" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hk0-ww-LUO" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="259" y="529" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dimmer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1S-Nc-v4A">
-                                <rect key="frame" x="190" y="534" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQp-lu-CdK">
-                                <rect key="frame" x="85" y="534" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dim On Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1S-Nc-v4A">
+                                <rect key="frame" x="157" y="534" width="99" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -218,8 +227,28 @@
                         <color key="backgroundColor" red="0.0039215686269999999" green="0.8862745098" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Qze-Rz-CaA" secondAttribute="trailing" id="5Oz-EH-xkI"/>
+                            <constraint firstItem="hk0-ww-LUO" firstAttribute="centerY" secondItem="X1S-Nc-v4A" secondAttribute="centerY" id="8nj-zg-BMu"/>
+                            <constraint firstItem="iVO-zC-veC" firstAttribute="centerY" secondItem="ZVw-y5-W2X" secondAttribute="centerY" id="Ajk-ZW-pii"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ZVw-y5-W2X" secondAttribute="leading" id="B1z-bl-jTd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hk0-ww-LUO" secondAttribute="trailing" id="BCA-e3-wMs"/>
+                            <constraint firstItem="bd5-eB-RDc" firstAttribute="centerY" secondItem="ADl-oz-G9I" secondAttribute="centerY" id="Clx-jA-hfq"/>
+                            <constraint firstItem="hk0-ww-LUO" firstAttribute="leading" secondItem="X1S-Nc-v4A" secondAttribute="trailing" constant="3" id="F3R-JS-T3b"/>
+                            <constraint firstItem="ADl-oz-G9I" firstAttribute="top" secondItem="ZVw-y5-W2X" secondAttribute="bottom" constant="17" id="H9F-lq-x0K"/>
                             <constraint firstItem="Qze-Rz-CaA" firstAttribute="top" secondItem="T1b-Fl-oaP" secondAttribute="bottom" id="MyO-xw-5bB"/>
+                            <constraint firstItem="XQp-lu-CdK" firstAttribute="centerY" secondItem="X1S-Nc-v4A" secondAttribute="centerY" id="N63-TJ-IxY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="ADl-oz-G9I" secondAttribute="leading" id="Q8w-E9-PXk"/>
+                            <constraint firstItem="ZVw-y5-W2X" firstAttribute="top" secondItem="Qze-Rz-CaA" secondAttribute="bottom" constant="38" id="SMR-6k-UBd"/>
+                            <constraint firstItem="bd5-eB-RDc" firstAttribute="leading" secondItem="ADl-oz-G9I" secondAttribute="trailing" constant="32" id="UwB-Km-zsK"/>
+                            <constraint firstItem="X1S-Nc-v4A" firstAttribute="leading" secondItem="XQp-lu-CdK" secondAttribute="trailing" constant="30" id="W0d-Xq-QSX"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="F4h-oe-1Ru" secondAttribute="leading" id="YQK-J9-IJx"/>
                             <constraint firstItem="Qze-Rz-CaA" firstAttribute="leading" secondItem="he2-Ie-ijX" secondAttribute="leading" id="YzX-39-Sc0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F4h-oe-1Ru" secondAttribute="trailing" id="bjR-eB-Mzb"/>
+                            <constraint firstItem="Pfj-Af-FYX" firstAttribute="top" secondItem="7Qd-bO-gJM" secondAttribute="bottom" id="gjy-Jq-VNM"/>
+                            <constraint firstItem="7Qd-bO-gJM" firstAttribute="leading" secondItem="he2-Ie-ijX" secondAttribute="leading" id="hP1-gC-RIk"/>
+                            <constraint firstItem="iVO-zC-veC" firstAttribute="leading" secondItem="ZVw-y5-W2X" secondAttribute="trailing" constant="8" id="kWM-vF-LgA"/>
+                            <constraint firstItem="F4h-oe-1Ru" firstAttribute="top" secondItem="X1S-Nc-v4A" secondAttribute="bottom" constant="12" id="lIO-qQ-W1d"/>
+                            <constraint firstItem="7Qd-bO-gJM" firstAttribute="top" secondItem="F4h-oe-1Ru" secondAttribute="bottom" constant="8" id="lJ2-fG-Z4P"/>
+                            <constraint firstAttribute="trailing" secondItem="7Qd-bO-gJM" secondAttribute="trailing" id="xM5-dW-egJ"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -233,7 +262,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgR-Df-lva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="898" y="125"/>
+            <point key="canvasLocation" x="896.79999999999995" y="124.58770614692655"/>
         </scene>
         <!--Meditation View Controller-->
         <scene sceneID="w55-cy-ODv">
@@ -260,6 +289,13 @@
                                     <action selector="endEarlyPressed:" destination="WF8-kA-Jmb" eventType="touchUpInside" id="4JM-JY-5qC"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yU-EV-KRh">
+                                <rect key="frame" x="121" y="82" width="132" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -268,6 +304,9 @@
                             <constraint firstAttribute="trailing" secondItem="2fY-mR-yb1" secondAttribute="trailing" id="xL0-uW-lcv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="countDownLabel" destination="4yU-EV-KRh" id="rGM-EZ-1gM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GfN-3l-e0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
