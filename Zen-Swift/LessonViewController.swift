@@ -20,10 +20,13 @@ class LessonViewController: UIViewController {
     var bellIntervals: Double!
     var timeElapsed: Int = Int()
     
+    let audioSession = AVAudioSession.sharedInstance()
+    
     @IBOutlet weak var settingsLabel: UILabel!
     @IBOutlet weak var timerController: SegmentedController!
     @IBOutlet weak var bellController: SegmentedController!
     @IBOutlet weak var dimmerController: SegmentedController!
+    @IBOutlet weak var volumePercentageLabel: UILabel!
     
     // MARK: IBActions
     
@@ -86,6 +89,26 @@ class LessonViewController: UIViewController {
         settingsLabel.text = meditationDescription
     }
     
+    func listenVolumeButton() {
+        
+        do {
+            try audioSession.setActive(true)
+        } catch {
+            print("some error")
+        }
+        audioSession.addObserver(self, forKeyPath: "outputVolume", options: NSKeyValueObservingOptions.new, context: nil)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        if keyPath == "outputVolume" {
+                        
+            let volumePercentage = Int(audioSession.outputVolume * 100)
+            volumePercentageLabel.text = "\(volumePercentage)%"
+        }
+    }
+
+    
     // MARK: Life Cycle
 
     override func viewDidLoad() {
@@ -107,6 +130,9 @@ class LessonViewController: UIViewController {
         
         self.view.layer.insertSublayer(gradient, at: 0)
         
+        let volumePercentage = Int(audioSession.outputVolume * 100)
+        volumePercentageLabel.text = "\(volumePercentage)%"
+        listenVolumeButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
