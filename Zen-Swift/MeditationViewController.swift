@@ -53,33 +53,33 @@ class MeditationViewController: UIViewController {
         // Init oscillator
         oscillator = AKOscillator()
         oscillator.stop()
-        oscillator.amplitude = 0.95
-        oscillator.frequency = random(300.0, 500.0)
+        oscillator.amplitude = 2
+        oscillator.frequency = random(440.0, 500.0)
         
         // Init filter
         filter = AKLowPassFilter(oscillator)
         filter.stop()
-        filter.cutoffFrequency = 1000
+        filter.cutoffFrequency = 8500
         
         // Init envelope
         envelope = AKAmplitudeEnvelope(filter)
         envelope.stop()
-        envelope.attackDuration = 0.05
+        envelope.attackDuration = 0.03
         envelope.decayDuration = 0.1
-        envelope.sustainLevel = 1.0
-        envelope.releaseDuration = random(0.5, 0.8)
+        envelope.sustainLevel = 2.0
+        envelope.releaseDuration = random(0.8, 1)
         
         // Init delay for chorusing
         delay = AKDelay(envelope)
         delay.stop()
-        delay.time = random(0.01, 0.05)
+        delay.time = random(0.01, 0.8)
         delay.dryWetMix = 1.0
         delay.feedback = 0.3
         
         // Init reverb
         reverb = AKReverb(delay)
         reverb.stop()
-        reverb.dryWetMix = random(0.4, 0.7)
+        reverb.dryWetMix = random(0.7, 0.9)
         reverb.loadFactoryPreset(AVAudioUnitReverbPreset.cathedral)
         
         // Init dynamic

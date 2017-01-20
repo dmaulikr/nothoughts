@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import AudioKit
+import AVFoundation
 
 class LessonViewController: UIViewController {
     
@@ -106,7 +106,6 @@ class LessonViewController: UIViewController {
         gradient.frame = self.view.frame
         
         self.view.layer.insertSublayer(gradient, at: 0)
-        
         
     }
     
