@@ -22,6 +22,7 @@ class LessonViewController: UIViewController {
     
     let audioSession = AVAudioSession.sharedInstance()
     
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var settingsLabel: UILabel!
     @IBOutlet weak var timerController: SegmentedController!
     @IBOutlet weak var bellController: SegmentedController!
@@ -115,7 +116,7 @@ class LessonViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        titleLabel.text = lessonTitle
         
         let gradient: CAGradientLayer = CAGradientLayer()
         

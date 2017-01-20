@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3742271E2D199D00901883 /* SegmentedController.swift */; };
 		8C8BE63C1E2A83DE00C203D5 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8BE63B1E2A83DE00C203D5 /* PageContentViewController.swift */; };
+		8CAA161A1E32777D00AC613D /* volumeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CAA16191E32777D00AC613D /* volumeLogo.png */; };
 		8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9641E1AE65800777244 /* AppDelegate.swift */; };
 		8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9661E1AE65800777244 /* InitialViewController.swift */; };
 		8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB9681E1AE65800777244 /* Main.storyboard */; };
@@ -56,6 +57,7 @@
 /* Begin PBXFileReference section */
 		8C3742271E2D199D00901883 /* SegmentedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
 		8C8BE63B1E2A83DE00C203D5 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		8CAA16191E32777D00AC613D /* volumeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volumeLogo.png; sourceTree = "<group>"; };
 		8CACB9611E1AE65800777244 /* Zen-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zen-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9641E1AE65800777244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CACB9661E1AE65800777244 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				8CACB9681E1AE65800777244 /* Main.storyboard */,
 				8CACB96B1E1AE65800777244 /* Assets.xcassets */,
 				8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */,
+				8CAA16191E32777D00AC613D /* volumeLogo.png */,
 				8CACB9701E1AE65800777244 /* Info.plist */,
 			);
 			path = "Zen-Swift";
@@ -274,6 +277,7 @@
 			files = (
 				8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */,
 				8CACB96C1E1AE65800777244 /* Assets.xcassets in Resources */,
+				8CAA161A1E32777D00AC613D /* volumeLogo.png in Resources */,
 				8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

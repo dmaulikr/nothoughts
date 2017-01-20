@@ -17,7 +17,7 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
     
     @IBAction func beginPressed(_ sender: Any) {
         
-        self.performSegue(withIdentifier: "MeditationSegue", sender: self)
+        self.performSegue(withIdentifier: "LessonSegue", sender: self)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -96,6 +96,8 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        pageIndex = 0
         
         let gradient: CAGradientLayer = CAGradientLayer()
         
