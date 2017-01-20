@@ -113,38 +113,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVO-zC-veC" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="85" y="453" width="274" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="274" id="1xW-cp-2GT"/>
-                                    <constraint firstAttribute="height" constant="30" id="9Z3-El-xrI"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="Sku-EL-1UI"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-eB-RDc" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="85" y="491" width="274" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="274" id="EZL-zK-7Xa"/>
-                                    <constraint firstAttribute="height" constant="30" id="pnL-lq-yp8"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="bellControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="i0d-tZ-gkB"/>
-                                </connections>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVw-y5-W2X">
-                                <rect key="frame" x="16" y="458" width="61" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-oz-G9I">
-                                <rect key="frame" x="16" y="496" width="37" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-bO-gJM">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="0.25" colorSpace="calibratedRGB"/>
@@ -195,19 +163,6 @@
                                     <constraint firstAttribute="height" constant="420" id="pqy-3w-QSK"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk0-ww-LUO" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="259" y="529" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="4lK-KN-DWR"/>
-                                    <constraint firstAttribute="width" constant="100" id="Yxl-q1-L4r"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQp-lu-CdK">
-                                <rect key="frame" x="85" y="534" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditate for 30 minutes with a bell every 10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4h-oe-1Ru">
                                 <rect key="frame" x="16" y="567" width="343" height="42"/>
                                 <constraints>
@@ -217,9 +172,54 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dim On Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1S-Nc-v4A">
-                                <rect key="frame" x="157" y="534" width="99" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVO-zC-veC" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
+                                <rect key="frame" x="88.5" y="447" width="274" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="1xW-cp-2GT"/>
+                                    <constraint firstAttribute="height" constant="30" id="9Z3-El-xrI"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="Sku-EL-1UI"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-eB-RDc" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
+                                <rect key="frame" x="86.5" y="485" width="274" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="274" id="EZL-zK-7Xa"/>
+                                    <constraint firstAttribute="height" constant="30" id="pnL-lq-yp8"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="bellControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="i0d-tZ-gkB"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVw-y5-W2X">
+                                <rect key="frame" x="16" y="452" width="64.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-oz-G9I">
+                                <rect key="frame" x="16" y="490" width="38.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk0-ww-LUO" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
+                                <rect key="frame" x="259" y="523" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4lK-KN-DWR"/>
+                                    <constraint firstAttribute="width" constant="100" id="Yxl-q1-L4r"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQp-lu-CdK">
+                                <rect key="frame" x="81" y="528" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dim On Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1S-Nc-v4A">
+                                <rect key="frame" x="153" y="528" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -237,7 +237,7 @@
                             <constraint firstItem="Qze-Rz-CaA" firstAttribute="top" secondItem="T1b-Fl-oaP" secondAttribute="bottom" id="MyO-xw-5bB"/>
                             <constraint firstItem="XQp-lu-CdK" firstAttribute="centerY" secondItem="X1S-Nc-v4A" secondAttribute="centerY" id="N63-TJ-IxY"/>
                             <constraint firstAttribute="leadingMargin" secondItem="ADl-oz-G9I" secondAttribute="leading" id="Q8w-E9-PXk"/>
-                            <constraint firstItem="ZVw-y5-W2X" firstAttribute="top" secondItem="Qze-Rz-CaA" secondAttribute="bottom" constant="38" id="SMR-6k-UBd"/>
+                            <constraint firstItem="ZVw-y5-W2X" firstAttribute="top" secondItem="Qze-Rz-CaA" secondAttribute="bottom" constant="32" id="SMR-6k-UBd"/>
                             <constraint firstItem="bd5-eB-RDc" firstAttribute="leading" secondItem="ADl-oz-G9I" secondAttribute="trailing" constant="32" id="UwB-Km-zsK"/>
                             <constraint firstItem="X1S-Nc-v4A" firstAttribute="leading" secondItem="XQp-lu-CdK" secondAttribute="trailing" constant="30" id="W0d-Xq-QSX"/>
                             <constraint firstAttribute="leadingMargin" secondItem="F4h-oe-1Ru" secondAttribute="leading" id="YQK-J9-IJx"/>
@@ -246,7 +246,7 @@
                             <constraint firstItem="Pfj-Af-FYX" firstAttribute="top" secondItem="7Qd-bO-gJM" secondAttribute="bottom" id="gjy-Jq-VNM"/>
                             <constraint firstItem="7Qd-bO-gJM" firstAttribute="leading" secondItem="he2-Ie-ijX" secondAttribute="leading" id="hP1-gC-RIk"/>
                             <constraint firstItem="iVO-zC-veC" firstAttribute="leading" secondItem="ZVw-y5-W2X" secondAttribute="trailing" constant="8" id="kWM-vF-LgA"/>
-                            <constraint firstItem="F4h-oe-1Ru" firstAttribute="top" secondItem="X1S-Nc-v4A" secondAttribute="bottom" constant="12" id="lIO-qQ-W1d"/>
+                            <constraint firstItem="F4h-oe-1Ru" firstAttribute="top" secondItem="X1S-Nc-v4A" secondAttribute="bottom" constant="18" id="lIO-qQ-W1d"/>
                             <constraint firstItem="7Qd-bO-gJM" firstAttribute="top" secondItem="F4h-oe-1Ru" secondAttribute="bottom" constant="8" id="lJ2-fG-Z4P"/>
                             <constraint firstAttribute="trailing" secondItem="7Qd-bO-gJM" secondAttribute="trailing" id="xM5-dW-egJ"/>
                         </constraints>

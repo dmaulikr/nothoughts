@@ -109,10 +109,13 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
         gradient.frame = self.view.frame
         
         self.view.layer.insertSublayer(gradient, at: 0)
-        
         self.presentPageController()
     }
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

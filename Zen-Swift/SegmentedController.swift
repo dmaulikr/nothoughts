@@ -41,7 +41,7 @@ import UIKit
         layer.borderColor = UIColor(white: 1.0, alpha: 0.5).cgColor
         layer.borderWidth = 1
         
-        backgroundColor = UIColor.clear
+        backgroundColor = UIColor(white: 1.0, alpha: 0.3)
         
         setupLabels()
         insertSubview(thumbView, at: 0)
@@ -60,6 +60,7 @@ import UIKit
             label.text = items[index - 1]
             label.textAlignment = .center
             label.textColor = UIColor(white: 0.5, alpha: 1.0)
+            label.font = label.font.withSize(15)
             self.addSubview(label)
             labels.append(label)
         }
