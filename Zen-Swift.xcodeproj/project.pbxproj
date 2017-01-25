@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3742271E2D199D00901883 /* SegmentedController.swift */; };
 		8C8BE63C1E2A83DE00C203D5 /* PageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8BE63B1E2A83DE00C203D5 /* PageContentViewController.swift */; };
+		8CA763031E3906F900A4FE55 /* right-action in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FB1E3906F900A4FE55 /* right-action */; };
+		8CA763041E3906F900A4FE55 /* right-concentration in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FC1E3906F900A4FE55 /* right-concentration */; };
+		8CA763051E3906F900A4FE55 /* right-diligence in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FD1E3906F900A4FE55 /* right-diligence */; };
+		8CA763061E3906F900A4FE55 /* right-livelihood.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FE1E3906F900A4FE55 /* right-livelihood.txt */; };
+		8CA763071E3906F900A4FE55 /* right-mindfulness in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FF1E3906F900A4FE55 /* right-mindfulness */; };
+		8CA763081E3906F900A4FE55 /* right-speech.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA763001E3906F900A4FE55 /* right-speech.txt */; };
+		8CA763091E3906F900A4FE55 /* right-thinking in Resources */ = {isa = PBXBuildFile; fileRef = 8CA763011E3906F900A4FE55 /* right-thinking */; };
+		8CA7630A1E3906F900A4FE55 /* right-view.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA763021E3906F900A4FE55 /* right-view.txt */; };
 		8CAA161A1E32777D00AC613D /* volumeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CAA16191E32777D00AC613D /* volumeLogo.png */; };
 		8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9641E1AE65800777244 /* AppDelegate.swift */; };
 		8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9661E1AE65800777244 /* InitialViewController.swift */; };
@@ -57,6 +65,14 @@
 /* Begin PBXFileReference section */
 		8C3742271E2D199D00901883 /* SegmentedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
 		8C8BE63B1E2A83DE00C203D5 /* PageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentViewController.swift; sourceTree = "<group>"; };
+		8CA762FB1E3906F900A4FE55 /* right-action */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-action"; sourceTree = "<group>"; };
+		8CA762FC1E3906F900A4FE55 /* right-concentration */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-concentration"; sourceTree = "<group>"; };
+		8CA762FD1E3906F900A4FE55 /* right-diligence */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-diligence"; sourceTree = "<group>"; };
+		8CA762FE1E3906F900A4FE55 /* right-livelihood.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-livelihood.txt"; sourceTree = "<group>"; };
+		8CA762FF1E3906F900A4FE55 /* right-mindfulness */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-mindfulness"; sourceTree = "<group>"; };
+		8CA763001E3906F900A4FE55 /* right-speech.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-speech.txt"; sourceTree = "<group>"; };
+		8CA763011E3906F900A4FE55 /* right-thinking */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-thinking"; sourceTree = "<group>"; };
+		8CA763021E3906F900A4FE55 /* right-view.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-view.txt"; sourceTree = "<group>"; };
 		8CAA16191E32777D00AC613D /* volumeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volumeLogo.png; sourceTree = "<group>"; };
 		8CACB9611E1AE65800777244 /* Zen-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zen-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9641E1AE65800777244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +118,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CA762FA1E3906F900A4FE55 /* Eightfold Path */ = {
+			isa = PBXGroup;
+			children = (
+				8CA762FB1E3906F900A4FE55 /* right-action */,
+				8CA762FC1E3906F900A4FE55 /* right-concentration */,
+				8CA762FD1E3906F900A4FE55 /* right-diligence */,
+				8CA762FE1E3906F900A4FE55 /* right-livelihood.txt */,
+				8CA762FF1E3906F900A4FE55 /* right-mindfulness */,
+				8CA763001E3906F900A4FE55 /* right-speech.txt */,
+				8CA763011E3906F900A4FE55 /* right-thinking */,
+				8CA763021E3906F900A4FE55 /* right-view.txt */,
+			);
+			path = "Eightfold Path";
+			sourceTree = "<group>";
+		};
 		8CACB9581E1AE65800777244 = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +141,7 @@
 				8CACB9781E1AE65800777244 /* Zen-SwiftTests */,
 				8CACB9831E1AE65800777244 /* Zen-SwiftUITests */,
 				8CACB9621E1AE65800777244 /* Products */,
+				8CA762FA1E3906F900A4FE55 /* Eightfold Path */,
 			);
 			sourceTree = "<group>";
 		};
@@ -276,9 +308,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */,
+				8CA763031E3906F900A4FE55 /* right-action in Resources */,
 				8CACB96C1E1AE65800777244 /* Assets.xcassets in Resources */,
+				8CA763081E3906F900A4FE55 /* right-speech.txt in Resources */,
+				8CA763041E3906F900A4FE55 /* right-concentration in Resources */,
+				8CA763071E3906F900A4FE55 /* right-mindfulness in Resources */,
+				8CA7630A1E3906F900A4FE55 /* right-view.txt in Resources */,
+				8CA763091E3906F900A4FE55 /* right-thinking in Resources */,
+				8CA763061E3906F900A4FE55 /* right-livelihood.txt in Resources */,
 				8CAA161A1E32777D00AC613D /* volumeLogo.png in Resources */,
 				8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */,
+				8CA763051E3906F900A4FE55 /* right-diligence in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -185,6 +185,13 @@
                                         <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ak-Qq-5fs">
+                                        <rect key="frame" x="8" y="60" width="359" height="352"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -203,11 +210,11 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditate for 30 minutes with a bell every 10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4h-oe-1Ru">
-                                <rect key="frame" x="16" y="567" width="343" height="42"/>
+                                <rect key="frame" x="0.0" y="567" width="375" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="wgH-OI-RSC"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -253,9 +260,9 @@
                             <constraint firstItem="ZVw-y5-W2X" firstAttribute="top" secondItem="Qze-Rz-CaA" secondAttribute="bottom" constant="32" id="SMR-6k-UBd"/>
                             <constraint firstItem="bd5-eB-RDc" firstAttribute="leading" secondItem="ADl-oz-G9I" secondAttribute="trailing" constant="34.5" id="UwB-Km-zsK"/>
                             <constraint firstItem="X1S-Nc-v4A" firstAttribute="leading" secondItem="XQp-lu-CdK" secondAttribute="trailing" constant="62" id="W0d-Xq-QSX"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="F4h-oe-1Ru" secondAttribute="leading" id="YQK-J9-IJx"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="F4h-oe-1Ru" secondAttribute="leading" constant="16" id="YQK-J9-IJx"/>
                             <constraint firstItem="Qze-Rz-CaA" firstAttribute="leading" secondItem="he2-Ie-ijX" secondAttribute="leading" id="YzX-39-Sc0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="F4h-oe-1Ru" secondAttribute="trailing" id="bjR-eB-Mzb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F4h-oe-1Ru" secondAttribute="trailing" constant="-16" id="bjR-eB-Mzb"/>
                             <constraint firstItem="Pfj-Af-FYX" firstAttribute="top" secondItem="7Qd-bO-gJM" secondAttribute="bottom" id="gjy-Jq-VNM"/>
                             <constraint firstItem="7Qd-bO-gJM" firstAttribute="leading" secondItem="he2-Ie-ijX" secondAttribute="leading" id="hP1-gC-RIk"/>
                             <constraint firstItem="iVO-zC-veC" firstAttribute="leading" secondItem="ZVw-y5-W2X" secondAttribute="trailing" constant="8" id="kWM-vF-LgA"/>
@@ -268,6 +275,7 @@
                     <connections>
                         <outlet property="bellController" destination="bd5-eB-RDc" id="ztf-Hj-Axo"/>
                         <outlet property="dimmerController" destination="hk0-ww-LUO" id="OX3-Ju-Eev"/>
+                        <outlet property="lessonLabel" destination="7ak-Qq-5fs" id="Ltq-Fc-pPO"/>
                         <outlet property="settingsLabel" destination="F4h-oe-1Ru" id="Uhk-od-DLw"/>
                         <outlet property="timerController" destination="iVO-zC-veC" id="RJ7-rS-nX6"/>
                         <outlet property="titleLabel" destination="xJf-qK-n9j" id="qBk-sK-HNI"/>

@@ -13,6 +13,7 @@ class LessonViewController: UIViewController {
     
     // MARK: Properties
     var lessonTitle: String!
+    var lessonBody: String!
     
     var meditationDescription: String!
     
@@ -23,6 +24,7 @@ class LessonViewController: UIViewController {
     let audioSession = AVAudioSession.sharedInstance()
     
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var lessonLabel: UILabel!
     @IBOutlet weak var settingsLabel: UILabel!
     @IBOutlet weak var timerController: SegmentedController!
     @IBOutlet weak var bellController: SegmentedController!
@@ -134,6 +136,23 @@ class LessonViewController: UIViewController {
         let volumePercentage = Int(audioSession.outputVolume * 100)
         volumePercentageLabel.text = "\(volumePercentage)%"
         listenVolumeButton()
+        
+        var fileName = lessonTitle.lowercased()
+        fileName = fileName.replacingOccurrences(of: " ", with: "-", options: .literal)
+        fileName = fileName + ".txt"
+        
+        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
+            
+            let path = dir.appendingPathComponent(fileName)
+            
+            //reading
+            do {
+                let text2 = try String(contentsOf: path, encoding: String.Encoding.utf8)
+                print(text2)
+            }
+            catch {/* error handling here */}
+        }
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
