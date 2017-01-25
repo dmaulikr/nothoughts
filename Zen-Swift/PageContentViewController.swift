@@ -12,8 +12,8 @@ class PageContentViewController: UIViewController {
     
     @IBOutlet weak var lessonLabel: UILabel!
     
-    var lessonTitle: String! = nil
-    var index: Int! = nil
+    var lessonTitle = String()
+    var index = Int()
 
     override func viewDidLoad() {
         super.viewDidLoad()

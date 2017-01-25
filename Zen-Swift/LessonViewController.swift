@@ -12,14 +12,13 @@ import AVFoundation
 class LessonViewController: UIViewController {
     
     // MARK: Properties
-    var lessonTitle: String!
-    var lessonBody: String!
+    var lessonTitle = String()
+    var lessonBody = String()
     
-    var meditationDescription: String!
+    var meditationDescription = String()
     
-    var meditationTime: Double!
-    var bellIntervals: Double!
-    var timeElapsed: Int = Int()
+    var meditationTime = Double()
+    var bellIntervals = Double()
     
     let audioSession = AVAudioSession.sharedInstance()
     
@@ -139,19 +138,16 @@ class LessonViewController: UIViewController {
         
         var fileName = lessonTitle.lowercased()
         fileName = fileName.replacingOccurrences(of: " ", with: "-", options: .literal)
-        fileName = fileName + ".txt"
+        let path = Bundle.main.path(forResource: fileName, ofType: ".txt")
         
-        if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first {
-            
-            let path = dir.appendingPathComponent(fileName)
-            
-            //reading
-            do {
-                let text2 = try String(contentsOf: path, encoding: String.Encoding.utf8)
-                print(text2)
-            }
-            catch {/* error handling here */}
+        do {
+            lessonBody = try String.init(contentsOfFile: path!)
+            lessonLabel.text = lessonBody
+        } catch {
+            print("Couldn't read file")
         }
+        
+        
         
     }
     
@@ -186,5 +182,4 @@ class LessonViewController: UIViewController {
             
         }
     }
-    
 }

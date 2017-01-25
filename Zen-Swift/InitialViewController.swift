@@ -26,7 +26,7 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
         
         let pageContentVC = viewController as! PageContentViewController
         let currentIndex = pageContentVC.index
-        var previousIndex = abs((currentIndex! - 1) % pathArray.count)
+        var previousIndex = abs((currentIndex - 1) % pathArray.count)
         
         if pageIndex == NSNotFound {
             return nil
@@ -43,7 +43,7 @@ class InitialViewController: UIViewController, UIPageViewControllerDataSource {
         
         let pageContentVC = viewController as! PageContentViewController
         let currentIndex = pageContentVC.index
-        let nextIndex = abs((currentIndex! + 1) % pathArray.count)
+        let nextIndex = abs((currentIndex + 1) % pathArray.count)
 
         if (pageIndex == NSNotFound) {
             return nil;
