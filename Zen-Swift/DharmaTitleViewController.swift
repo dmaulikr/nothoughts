@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PageContentViewController: UIViewController {
+class DharmaTitleViewController: UIViewController {
     
     @IBOutlet weak var lessonLabel: UILabel!
     
