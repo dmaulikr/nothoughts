@@ -11,10 +11,6 @@ import UIKit
 
 class InitialViewController: UIViewController {
     
-    var pageIndex: Int = 0
-    var pageViewController: UIPageViewController?
-    let pathArray = ["Right View", "Right Thinking", "Right Mindfulness", "Right Speech", "Right Action", "Right Diligence", "Right Concentration", "Right Livelihood"]
-    
     @IBAction func beginPressed(_ sender: Any) {
         
         self.performSegue(withIdentifier: "LessonSegue", sender: self)
@@ -24,7 +20,7 @@ class InitialViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        pageIndex = 0
+//        pageIndex = 0
         
         let gradient: CAGradientLayer = CAGradientLayer()
         
@@ -52,8 +48,8 @@ class InitialViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "LessonSegue" {
-            let lvc = segue.destination as! LessonViewController
-            lvc.lessonTitle = pathArray[pageIndex]
+//            let lvc = segue.destination as! LessonViewController
+//            lvc.lessonTitle = pathArray[pageIndex]
         }
     }
 }

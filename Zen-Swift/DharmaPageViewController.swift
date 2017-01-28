@@ -8,10 +8,9 @@
 
 import UIKit
 
-class DharmaPageViewController: UIViewController, UIPageViewControllerDataSource {
+class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     var pageIndex: Int = 0
-    var pageViewController: UIPageViewController?
     let pathArray = ["Right View", "Right Thinking", "Right Mindfulness", "Right Speech", "Right Action", "Right Diligence", "Right Concentration", "Right Livelihood"]
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -67,30 +66,21 @@ class DharmaPageViewController: UIViewController, UIPageViewControllerDataSource
 
     func presentPageController() {
         
-        pageViewController = self.storyboard?.instantiateViewController(withIdentifier: "PageViewController") as! UIPageViewController!
-        pageViewController?.dataSource = self
-        
-        let startingViewController = self.viewControllerAtIndex(index: 0)
-        let viewControllers: [UIViewController] = [startingViewController]
-        
-        self.pageViewController?.setViewControllers(viewControllers, direction: .reverse, animated: true, completion: nil)
-        
-        // Change size
-        self.pageViewController?.view.frame = CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 75)
-        self.pageViewController?.view.center = self.view.center
-        
-        self.addChildViewController(pageViewController!)
-        self.view.addSubview((pageViewController?.view)!)
-        self.pageViewController?.didMove(toParentViewController: self)
-        
+        let page = storyboard?.instantiateViewController(withIdentifier: "DharmaTitleViewController") as! DharmaTitleViewController
+        setViewControllers([self.viewControllerAtIndex(index: 0)], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
+        pageIndex = 0
+        page.index = 0
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        self.presentPageController()
+        
+        self.dataSource = self
+        self.delegate = self
 
+        self.presentPageController()
     }
 
     override func didReceiveMemoryWarning() {

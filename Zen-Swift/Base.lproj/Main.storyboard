@@ -21,7 +21,7 @@
         <!--Dharma Title View Controller-->
         <scene sceneID="nnw-Nz-lQs">
             <objects>
-                <viewController storyboardIdentifier="PageContentViewController" id="Oie-d0-Jcw" customClass="DharmaTitleViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DharmaTitleViewController" id="Oie-d0-Jcw" customClass="DharmaTitleViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wjh-tw-fCi"/>
                         <viewControllerLayoutGuide type="bottom" id="wVJ-7y-pqH"/>
@@ -55,6 +55,14 @@
             </objects>
             <point key="canvasLocation" x="934" y="-582"/>
         </scene>
+        <!--Dharma Page View Controller-->
+        <scene sceneID="Q4A-1Y-LM7">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="7wR-zi-KRF" customClass="DharmaPageViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Apo-t4-sBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="125"/>
+        </scene>
         <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -73,7 +81,7 @@
                                     <constraint firstAttribute="height" constant="75" id="aRw-4z-4y1"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="J0D-PO-tw7" kind="embed" id="7B4-Em-Obd"/>
+                                    <segue destination="7wR-zi-KRF" kind="embed" id="RQZ-rr-fxU"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9u4-j4-T86">
@@ -341,20 +349,6 @@
             </objects>
             <point key="canvasLocation" x="2834" y="125"/>
         </scene>
-        <!--Dharma Page View Controller-->
-        <scene sceneID="cri-5a-QFg">
-            <objects>
-                <viewController storyboardIdentifier="DharmaTitleViewController" id="J0D-PO-tw7" customClass="DharmaPageViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qHi-yM-FWc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e7S-5t-Frr" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="934" y="125"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="mOO-a5-DpT">
             <objects>
@@ -362,7 +356,7 @@
                     <view key="view" contentMode="scaleToFill" id="cOB-IL-hud">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="74j-6l-8aD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -376,7 +370,7 @@
                     <view key="view" contentMode="scaleToFill" id="G7t-ci-vCl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcN-R0-dkM" userLabel="First Responder" sceneMemberID="firstResponder"/>

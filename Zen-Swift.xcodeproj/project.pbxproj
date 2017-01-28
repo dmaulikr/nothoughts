@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3742271E2D199D00901883 /* SegmentedController.swift */; };
 		8C416A771E3D42520018F999 /* DharmaPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A761E3D42520018F999 /* DharmaPageViewController.swift */; };
-		8C8BE63C1E2A83DE00C203D5 /* DharmaTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C8BE63B1E2A83DE00C203D5 /* DharmaTitleViewController.swift */; };
+		8C416A7B1E3D51FE0018F999 /* DharmaTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A7A1E3D51FE0018F999 /* DharmaTitleViewController.swift */; };
 		8CA763031E3906F900A4FE55 /* right-action.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FB1E3906F900A4FE55 /* right-action.txt */; };
 		8CA763041E3906F900A4FE55 /* right-concentration.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FC1E3906F900A4FE55 /* right-concentration.txt */; };
 		8CA763051E3906F900A4FE55 /* right-diligence.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FD1E3906F900A4FE55 /* right-diligence.txt */; };
@@ -66,7 +66,7 @@
 /* Begin PBXFileReference section */
 		8C3742271E2D199D00901883 /* SegmentedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
 		8C416A761E3D42520018F999 /* DharmaPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaPageViewController.swift; sourceTree = "<group>"; };
-		8C8BE63B1E2A83DE00C203D5 /* DharmaTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaTitleViewController.swift; sourceTree = "<group>"; };
+		8C416A7A1E3D51FE0018F999 /* DharmaTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaTitleViewController.swift; sourceTree = "<group>"; };
 		8CA762FB1E3906F900A4FE55 /* right-action.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-action.txt"; sourceTree = "<group>"; };
 		8CA762FC1E3906F900A4FE55 /* right-concentration.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-concentration.txt"; sourceTree = "<group>"; };
 		8CA762FD1E3906F900A4FE55 /* right-diligence.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-diligence.txt"; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 				8CACB9641E1AE65800777244 /* AppDelegate.swift */,
 				8CACB9661E1AE65800777244 /* InitialViewController.swift */,
 				8C416A761E3D42520018F999 /* DharmaPageViewController.swift */,
-				8C8BE63B1E2A83DE00C203D5 /* DharmaTitleViewController.swift */,
+				8C416A7A1E3D51FE0018F999 /* DharmaTitleViewController.swift */,
 				8CACB9921E1AE71900777244 /* LessonViewController.swift */,
 				8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */,
 				8C3742271E2D199D00901883 /* SegmentedController.swift */,
@@ -347,11 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */,
-				8C8BE63C1E2A83DE00C203D5 /* DharmaTitleViewController.swift in Sources */,
 				8CACB9931E1AE71900777244 /* LessonViewController.swift in Sources */,
 				8C416A771E3D42520018F999 /* DharmaPageViewController.swift in Sources */,
 				8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */,
 				8CD171AB1E2FC4F000BF3BCD /* MeditationViewController.swift in Sources */,
+				8C416A7B1E3D51FE0018F999 /* DharmaTitleViewController.swift in Sources */,
 				8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
