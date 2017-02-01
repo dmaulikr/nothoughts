@@ -169,17 +169,4 @@ class LessonViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
-
-    
-    // MARK: - Navigation
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        if segue.identifier == "MeditationSegue" {
-            let mvc = segue.destination as! MeditationViewController
-            mvc.meditationTime = self.meditationTime
-            mvc.bellIntervals = self.bellIntervals
-            
-        }
-    }
 }

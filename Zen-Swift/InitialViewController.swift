@@ -34,6 +34,12 @@ class InitialViewController: UIViewController {
         gradient.frame = self.view.frame
         
         self.view.layer.insertSublayer(gradient, at: 0)
+        
+        var meditationTime = UserDefaults.standard.double(forKey: "meditation-time")
+        
+        if meditationTime == 0.0 {
+            meditationTime = 10 * 60
+        }
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {

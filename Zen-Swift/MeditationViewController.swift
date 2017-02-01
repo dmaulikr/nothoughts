@@ -11,8 +11,8 @@ import AudioKit
 
 class MeditationViewController: UIViewController {
     
-    var meditationTime: Double!
-    var bellIntervals: Double!
+    var meditationTime: Double = UserDefaults.standard.double(forKey: "meditation-time")
+    let bellIntervals: Double = UserDefaults.standard.double(forKey: "interval-time")
     
     var backgroundTask: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
     

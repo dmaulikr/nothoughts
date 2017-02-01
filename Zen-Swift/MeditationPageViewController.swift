@@ -8,12 +8,48 @@
 
 import UIKit
 
-class MeditationPageViewController: UIPageViewController {
-
+class MeditationPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+    
+    var pages: [UIViewController] = []
+    var pageIndex = 0
+    
+    // Page Before
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
+                
+        let index = (self.pages as NSArray).index(of: viewController)
+        
+        // if currently displaying first view controller, return nil to indicate that there is no previous view controller
+        return (index == 0 ? nil : self.pages[index - 1])
+    }
+    
+    
+    // Page After
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
+        
+        let index = (self.pages as NSArray).index(of: viewController)
+        
+        // if currently displaying last view controller, return nil to indicate that there is no next view controller
+        return (index == self.pages.count - 1 ? nil : self.pages[index + 1])
+    }
+    
+    func presentPageViewController() {
+        
+        self.pages = [
+            self.storyboard!.instantiateViewController(withIdentifier: "MeditationBeginViewController") as! MeditationBeginViewController,
+            self.storyboard!.instantiateViewController(withIdentifier: "MeditationSettingsViewController") as! MeditationSettingsViewController
+        ]
+        
+        let startingViewController = self.pages.first!
+        setViewControllers([startingViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.dataSource = self
+        self.delegate = self
+        self.presentPageViewController()
     }
 
     override func didReceiveMemoryWarning() {

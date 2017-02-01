@@ -10,6 +10,11 @@
 		8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3742271E2D199D00901883 /* SegmentedController.swift */; };
 		8C416A771E3D42520018F999 /* DharmaPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A761E3D42520018F999 /* DharmaPageViewController.swift */; };
 		8C416A7B1E3D51FE0018F999 /* DharmaTitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A7A1E3D51FE0018F999 /* DharmaTitleViewController.swift */; };
+		8C416A7F1E3F786D0018F999 /* MeditationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A7E1E3F786D0018F999 /* MeditationPageViewController.swift */; };
+		8C416A831E3F79990018F999 /* LessonPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A821E3F79990018F999 /* LessonPageViewController.swift */; };
+		8C416A851E3F79B50018F999 /* LessonContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A841E3F79B50018F999 /* LessonContentViewController.swift */; };
+		8C416A871E3F7DB10018F999 /* MeditationBeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A861E3F7DB10018F999 /* MeditationBeginViewController.swift */; };
+		8C416A891E3F7DC10018F999 /* MeditationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A881E3F7DC10018F999 /* MeditationSettingsViewController.swift */; };
 		8CA763031E3906F900A4FE55 /* right-action.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FB1E3906F900A4FE55 /* right-action.txt */; };
 		8CA763041E3906F900A4FE55 /* right-concentration.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FC1E3906F900A4FE55 /* right-concentration.txt */; };
 		8CA763051E3906F900A4FE55 /* right-diligence.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FD1E3906F900A4FE55 /* right-diligence.txt */; };
@@ -67,6 +72,11 @@
 		8C3742271E2D199D00901883 /* SegmentedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
 		8C416A761E3D42520018F999 /* DharmaPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaPageViewController.swift; sourceTree = "<group>"; };
 		8C416A7A1E3D51FE0018F999 /* DharmaTitleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DharmaTitleViewController.swift; sourceTree = "<group>"; };
+		8C416A7E1E3F786D0018F999 /* MeditationPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationPageViewController.swift; sourceTree = "<group>"; };
+		8C416A821E3F79990018F999 /* LessonPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonPageViewController.swift; sourceTree = "<group>"; };
+		8C416A841E3F79B50018F999 /* LessonContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonContentViewController.swift; sourceTree = "<group>"; };
+		8C416A861E3F7DB10018F999 /* MeditationBeginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationBeginViewController.swift; sourceTree = "<group>"; };
+		8C416A881E3F7DC10018F999 /* MeditationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationSettingsViewController.swift; sourceTree = "<group>"; };
 		8CA762FB1E3906F900A4FE55 /* right-action.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-action.txt"; sourceTree = "<group>"; };
 		8CA762FC1E3906F900A4FE55 /* right-concentration.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-concentration.txt"; sourceTree = "<group>"; };
 		8CA762FD1E3906F900A4FE55 /* right-diligence.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-diligence.txt"; sourceTree = "<group>"; };
@@ -120,6 +130,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C416A7C1E3F78330018F999 /* Middle */ = {
+			isa = PBXGroup;
+			children = (
+				8C416A761E3D42520018F999 /* DharmaPageViewController.swift */,
+				8C416A7A1E3D51FE0018F999 /* DharmaTitleViewController.swift */,
+			);
+			name = Middle;
+			sourceTree = "<group>";
+		};
+		8C416A7D1E3F783E0018F999 /* Bottom */ = {
+			isa = PBXGroup;
+			children = (
+				8C416A7E1E3F786D0018F999 /* MeditationPageViewController.swift */,
+				8C416A861E3F7DB10018F999 /* MeditationBeginViewController.swift */,
+				8C416A881E3F7DC10018F999 /* MeditationSettingsViewController.swift */,
+			);
+			name = Bottom;
+			sourceTree = "<group>";
+		};
+		8C416A801E3F79700018F999 /* Top */ = {
+			isa = PBXGroup;
+			children = (
+				8C416A821E3F79990018F999 /* LessonPageViewController.swift */,
+				8C416A841E3F79B50018F999 /* LessonContentViewController.swift */,
+			);
+			name = Top;
+			sourceTree = "<group>";
+		};
 		8CA762FA1E3906F900A4FE55 /* Eightfold Path */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,8 +200,9 @@
 			children = (
 				8CACB9641E1AE65800777244 /* AppDelegate.swift */,
 				8CACB9661E1AE65800777244 /* InitialViewController.swift */,
-				8C416A761E3D42520018F999 /* DharmaPageViewController.swift */,
-				8C416A7A1E3D51FE0018F999 /* DharmaTitleViewController.swift */,
+				8C416A801E3F79700018F999 /* Top */,
+				8C416A7C1E3F78330018F999 /* Middle */,
+				8C416A7D1E3F783E0018F999 /* Bottom */,
 				8CACB9921E1AE71900777244 /* LessonViewController.swift */,
 				8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */,
 				8C3742271E2D199D00901883 /* SegmentedController.swift */,
@@ -349,9 +388,14 @@
 				8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */,
 				8CACB9931E1AE71900777244 /* LessonViewController.swift in Sources */,
 				8C416A771E3D42520018F999 /* DharmaPageViewController.swift in Sources */,
+				8C416A7F1E3F786D0018F999 /* MeditationPageViewController.swift in Sources */,
 				8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */,
+				8C416A871E3F7DB10018F999 /* MeditationBeginViewController.swift in Sources */,
 				8CD171AB1E2FC4F000BF3BCD /* MeditationViewController.swift in Sources */,
+				8C416A891E3F7DC10018F999 /* MeditationSettingsViewController.swift in Sources */,
+				8C416A851E3F79B50018F999 /* LessonContentViewController.swift in Sources */,
 				8C416A7B1E3D51FE0018F999 /* DharmaTitleViewController.swift in Sources */,
+				8C416A831E3F79990018F999 /* LessonPageViewController.swift in Sources */,
 				8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

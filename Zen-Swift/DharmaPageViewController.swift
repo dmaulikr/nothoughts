@@ -27,6 +27,8 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
             previousIndex = pathArray.count - 1
         }
         
+        print("Before")
+        
         return viewControllerAtIndex(index: previousIndex)
     }
     
@@ -40,20 +42,15 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
             return nil;
         }
         
+        print("After")
+        
         return viewControllerAtIndex(index: nextIndex)
-    }
-    
-    func presentationCount(for pageViewController: UIPageViewController) -> Int {
-        return pathArray.count
-    }
-    
-    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        return 0
     }
     
     func viewControllerAtIndex(index: NSInteger) -> DharmaTitleViewController {
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        
         // Create a new view controller and pass suitable data.
         let contentViewController = storyboard.instantiateViewController(withIdentifier: "DharmaTitleViewController") as! DharmaTitleViewController
         
@@ -66,20 +63,16 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
 
     func presentPageController() {
         
-        let page = storyboard?.instantiateViewController(withIdentifier: "DharmaTitleViewController") as! DharmaTitleViewController
         setViewControllers([self.viewControllerAtIndex(index: 0)], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
         pageIndex = 0
-        page.index = 0
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         self.dataSource = self
         self.delegate = self
-
         self.presentPageController()
     }
 

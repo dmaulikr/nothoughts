@@ -19,7 +19,7 @@ import UIKit
         }
     }
     
-    var selectedIndex: Int = 0 {
+    var selectedIndex: Int! = 0 {
         didSet {
             displayNewSelectedIndex()
         }
@@ -85,6 +85,8 @@ import UIKit
             let xPosition = CGFloat(index) * labelWidth
             label.frame = CGRect(x: xPosition, y: 0, width: labelWidth, height: labelHeight)
         }
+        
+        self.displayNewSelectedIndex()
     }
     
     override func beginTracking(_ touch: UITouch, with event: UIEvent?) -> Bool {

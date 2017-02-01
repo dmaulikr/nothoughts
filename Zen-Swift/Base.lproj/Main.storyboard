@@ -18,6 +18,27 @@
             </objects>
             <point key="canvasLocation" x="137" y="-582"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="bcb-lN-VSn">
+            <objects>
+                <viewController id="Tvc-PO-B61" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zsm-1t-Jth"/>
+                        <viewControllerLayoutGuide type="bottom" id="FGe-Tl-r63"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zgg-zM-Kiw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="276"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RZv-hp-qez" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1638" y="-106"/>
+        </scene>
         <!--Dharma Title View Controller-->
         <scene sceneID="nnw-Nz-lQs">
             <objects>
@@ -27,7 +48,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wVJ-7y-pqH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Fsb-Lk-FD3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgr-FZ-ZrW">
@@ -47,13 +68,155 @@
                             <constraint firstItem="Mgr-FZ-ZrW" firstAttribute="leading" secondItem="Fsb-Lk-FD3" secondAttribute="leadingMargin" id="jUa-7C-pUj"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="75"/>
                     <connections>
                         <outlet property="lessonLabel" destination="Mgr-FZ-ZrW" id="0Fo-k3-t6O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="45H-n9-5Nu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="934" y="-582"/>
+            <point key="canvasLocation" x="1638" y="125"/>
+        </scene>
+        <!--Meditation Begin View Controller-->
+        <scene sceneID="UGk-u1-jxp">
+            <objects>
+                <viewController storyboardIdentifier="MeditationBeginViewController" id="fli-Gz-8ha" customClass="MeditationBeginViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YOJ-9J-rgy"/>
+                        <viewControllerLayoutGuide type="bottom" id="wzX-CI-qtL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6FP-TC-2Jn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPV-o7-aie">
+                                <rect key="frame" x="130" y="128" width="115" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5R1-QZ-gER"/>
+                                    <constraint firstAttribute="width" constant="115" id="cWe-GS-gN6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Meditate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beginPressed:" destination="fli-Gz-8ha" eventType="touchUpInside" id="yi5-gx-Mku"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="73c-tJ-k5m">
+                                <rect key="frame" x="16" y="229" width="343" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="hiN-oz-Ly6"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="settingsPressed:" destination="fli-Gz-8ha" eventType="touchUpInside" id="sgW-XO-OE1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fPV-o7-aie" firstAttribute="centerY" secondItem="6FP-TC-2Jn" secondAttribute="centerY" id="aps-lV-lta"/>
+                            <constraint firstItem="fPV-o7-aie" firstAttribute="centerX" secondItem="6FP-TC-2Jn" secondAttribute="centerX" id="cmq-kg-h5l"/>
+                            <constraint firstItem="73c-tJ-k5m" firstAttribute="centerX" secondItem="6FP-TC-2Jn" secondAttribute="centerX" id="j1e-Cp-qjz"/>
+                            <constraint firstItem="wzX-CI-qtL" firstAttribute="top" secondItem="73c-tJ-k5m" secondAttribute="bottom" constant="37" id="m0G-l9-zmy"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="296"/>
+                    <connections>
+                        <outlet property="settingsButton" destination="73c-tJ-k5m" id="ArQ-WI-WpI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDE-kW-7MJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1637.5999999999999" y="355.32233883058473"/>
+        </scene>
+        <!--Meditation Settings View Controller-->
+        <scene sceneID="ebf-8L-XA9">
+            <objects>
+                <viewController storyboardIdentifier="MeditationSettingsViewController" id="FWK-QC-c4i" customClass="MeditationSettingsViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="goi-QM-XUM"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Cj-0M-Xua"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LKN-ni-Ybr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rLk-xB-lYf" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
+                                <rect key="frame" x="16" y="88" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Loh-2o-MhB"/>
+                                    <constraint firstAttribute="width" constant="343" id="rfp-an-mJ7"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="meditationTimerPressed:" destination="FWK-QC-c4i" eventType="valueChanged" id="ZxZ-PO-eD8"/>
+                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="XMJ-rp-gfK"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRq-YM-FkM" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
+                                <rect key="frame" x="16" y="182" width="348" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nw9-Se-47m"/>
+                                    <constraint firstAttribute="width" constant="348" id="fOr-dR-rZk"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="intervalTimerPressed:" destination="FWK-QC-c4i" eventType="valueChanged" id="VMa-r5-fOF"/>
+                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="Rdw-Xw-Bp8"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditation time in minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cze-Sx-E5N">
+                                <rect key="frame" x="89" y="59" width="202" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bell intervals in minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOo-Dc-srE">
+                                <rect key="frame" x="100" y="153" width="180" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mRq-YM-FkM" firstAttribute="centerX" secondItem="LKN-ni-Ybr" secondAttribute="centerX" constant="2.5" id="4NW-Bd-eJP"/>
+                            <constraint firstItem="hOo-Dc-srE" firstAttribute="centerX" secondItem="LKN-ni-Ybr" secondAttribute="centerX" constant="2.5" id="CDp-X2-IGI"/>
+                            <constraint firstItem="rLk-xB-lYf" firstAttribute="centerX" secondItem="LKN-ni-Ybr" secondAttribute="centerX" id="Eg7-0z-jvB"/>
+                            <constraint firstItem="rLk-xB-lYf" firstAttribute="top" secondItem="Cze-Sx-E5N" secondAttribute="bottom" constant="8" id="Psq-y5-DX8"/>
+                            <constraint firstItem="hOo-Dc-srE" firstAttribute="top" secondItem="rLk-xB-lYf" secondAttribute="bottom" constant="35" id="XCT-UD-D3O"/>
+                            <constraint firstItem="mRq-YM-FkM" firstAttribute="top" secondItem="hOo-Dc-srE" secondAttribute="bottom" constant="8" id="bjG-tu-hBQ"/>
+                            <constraint firstItem="Cze-Sx-E5N" firstAttribute="centerX" secondItem="LKN-ni-Ybr" secondAttribute="centerX" constant="2.5" id="iRr-mt-8GG"/>
+                            <constraint firstItem="Cze-Sx-E5N" firstAttribute="top" secondItem="goi-QM-XUM" secondAttribute="bottom" constant="59" id="pNU-hg-cXc"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="296"/>
+                    <connections>
+                        <outlet property="intervalController" destination="mRq-YM-FkM" id="q9X-Kh-l9R"/>
+                        <outlet property="timerController" destination="rLk-xB-lYf" id="tmP-93-1MV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s7W-8x-5u4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2373.5999999999999" y="355.32233883058473"/>
+        </scene>
+        <!--Lesson Page View Controller-->
+        <scene sceneID="6nu-yK-9xl">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="Zbn-oq-bMZ" customClass="LessonPageViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rao-gN-yWA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="-106"/>
         </scene>
         <!--Dharma Page View Controller-->
         <scene sceneID="Q4A-1Y-LM7">
@@ -62,6 +225,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Apo-t4-sBi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="934" y="125"/>
+        </scene>
+        <!--Meditation Page View Controller-->
+        <scene sceneID="Yvn-nI-2AF">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="PjU-EH-tec" customClass="MeditationPageViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PWm-64-8P3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="357"/>
         </scene>
         <!--Initial View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -88,14 +259,14 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="276"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="RZk-GW-RHW" kind="embed" id="yeQ-rC-HGp"/>
+                                    <segue destination="Zbn-oq-bMZ" kind="embed" id="nlu-bC-vdT"/>
                                 </connections>
                             </containerView>
                             <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gwj-5M-PUP">
                                 <rect key="frame" x="0.0" y="371" width="375" height="296"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <connections>
-                                    <segue destination="CWW-ra-A5k" kind="embed" id="orS-4A-to3"/>
+                                    <segue destination="PjU-EH-tec" kind="embed" id="dSu-O3-vWi"/>
                                 </connections>
                             </containerView>
                         </subviews>
@@ -294,17 +465,16 @@
                         <outlet property="timerController" destination="iVO-zC-veC" id="RJ7-rS-nX6"/>
                         <outlet property="titleLabel" destination="xJf-qK-n9j" id="qBk-sK-HNI"/>
                         <outlet property="volumePercentageLabel" destination="XQp-lu-CdK" id="mfe-bX-wKP"/>
-                        <segue destination="WF8-kA-Jmb" kind="presentation" identifier="MeditationSegue" modalTransitionStyle="crossDissolve" id="B3L-af-EOU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgR-Df-lva" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1868" y="125"/>
+            <point key="canvasLocation" x="2402" y="-382"/>
         </scene>
         <!--Meditation View Controller-->
         <scene sceneID="w55-cy-ODv">
             <objects>
-                <viewController id="WF8-kA-Jmb" customClass="MeditationViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MeditationViewController" id="WF8-kA-Jmb" customClass="MeditationViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KZH-RB-DIM"/>
                         <viewControllerLayoutGuide type="bottom" id="CMv-by-m7i"/>
@@ -347,35 +517,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GfN-3l-e0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2834" y="125"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="mOO-a5-DpT">
-            <objects>
-                <viewController id="CWW-ra-A5k" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cOB-IL-hud">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="296"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="74j-6l-8aD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="934" y="346"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="xoT-tm-T6y">
-            <objects>
-                <viewController id="RZk-GW-RHW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="G7t-ci-vCl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bcN-R0-dkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="934" y="-93"/>
+            <point key="canvasLocation" x="3156" y="70"/>
         </scene>
     </scenes>
     <resources>
