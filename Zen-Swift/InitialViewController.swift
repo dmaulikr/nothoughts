@@ -11,6 +11,8 @@ import UIKit
 
 class InitialViewController: UIViewController {
     
+    var lesson: String!
+    
     @IBAction func beginPressed(_ sender: Any) {
         
         self.performSegue(withIdentifier: "LessonSegue", sender: self)

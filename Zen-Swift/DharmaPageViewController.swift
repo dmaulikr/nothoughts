@@ -58,6 +58,8 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         contentViewController.index = index
         pageIndex = index
         
+        (self.parent as! InitialViewController).lesson = pathArray[pageIndex]
+        
         return contentViewController
     }
 
@@ -74,6 +76,7 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         self.dataSource = self
         self.delegate = self
         self.presentPageController()
+        
     }
 
     override func didReceiveMemoryWarning() {
