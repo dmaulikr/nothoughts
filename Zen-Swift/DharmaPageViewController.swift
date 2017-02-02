@@ -44,6 +44,7 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         
         print("After")
         
+        
         return viewControllerAtIndex(index: nextIndex)
     }
     
@@ -57,9 +58,7 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         contentViewController.lessonTitle = pathArray[index]
         contentViewController.index = index
         pageIndex = index
-        
-        (self.parent as! InitialViewController).lesson = pathArray[pageIndex]
-        
+                        
         return contentViewController
     }
 
@@ -73,6 +72,7 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
         self.dataSource = self
         self.delegate = self
         self.presentPageController()

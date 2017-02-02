@@ -8,10 +8,7 @@
 
 import UIKit
 
-
 class InitialViewController: UIViewController {
-    
-    var lesson: String!
     
     @IBAction func beginPressed(_ sender: Any) {
         
@@ -21,16 +18,13 @@ class InitialViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-//        pageIndex = 0
-        
+                
         let gradient: CAGradientLayer = CAGradientLayer()
         
         let topColor = UIColor(red: 187/255, green: 217/255, blue: 220/255, alpha: 1.0)
         let bottomColor = UIColor(red: 70/255, green: 217/255, blue: 212/255, alpha: 1.0)
         
         gradient.colors = [topColor.cgColor, bottomColor.cgColor]
-//        gradient.locations = [0.0 , 1.0]
         gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
         gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
         gradient.frame = self.view.frame
