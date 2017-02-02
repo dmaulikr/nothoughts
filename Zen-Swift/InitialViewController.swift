@@ -8,21 +8,24 @@
 
 import UIKit
 
+protocol ControllerDelegate {
+    
+    func changeLesson(lessonTitle: String) 
+    
+}
+
 class InitialViewController: UIViewController, DharmaDelegate {
+    
+    var controllerDelegate: ControllerDelegate
     
     var lesson: String = "Right View" {
         didSet {
+            
         }
     }
     
-    @IBAction func beginPressed(_ sender: Any) {
-        
-        self.performSegue(withIdentifier: "LessonSegue", sender: self)
-    }
-    
     func newLesson(lessonName: String) {
-        
-        
+        lesson = lessonName
     }
     
     override func viewDidLoad() {
@@ -68,8 +71,7 @@ class InitialViewController: UIViewController, DharmaDelegate {
         if segue.identifier == "LessonChildSegue" {
             
             let lpvc = segue.destination as! LessonPageViewController
-            lpvc.lessonTitle = self.lesson
-            
+            lpvc.lessonTitle = lesson
         }
     }
 }

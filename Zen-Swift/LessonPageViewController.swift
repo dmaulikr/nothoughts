@@ -8,12 +8,17 @@
 
 import UIKit
 
-class LessonPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
-
-    var lessonTitle: String! = "Right View" {
+class LessonPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, ControllerDelegate {
+    
+    var lessonTitle: String? {
+        
         didSet {
-            print("lpvc " + lessonTitle)
+            print("lpvc " + lessonTitle!)
         }
+    }
+    
+    func changeLesson(lessonTitle: String) {
+        self.lessonTitle = lessonTitle
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -57,14 +62,18 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "LessonChildSegue" {
+         
+            let ivc = segue.destination as! InitialViewController
+            ivc.controllerDelegate = self
+        }
     }
-    */
+
 
 }
