@@ -10,10 +10,26 @@ import UIKit
 
 class LessonContentViewController: UIViewController {
 
+    var currentLesson: String! = "Right View" {
+        willSet {
+            
+        }
+    }
+    
+    var lessonContent: String! {
+        didSet{
+            lessonLabel.text = lessonContent
+        }
+    }
+    
+    @IBOutlet weak var lessonLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lessonLabel.text = lessonContent
+        
     }
 
     override func didReceiveMemoryWarning() {

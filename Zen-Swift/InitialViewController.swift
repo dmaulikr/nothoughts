@@ -8,17 +8,27 @@
 
 import UIKit
 
-class InitialViewController: UIViewController {
+class InitialViewController: UIViewController, DharmaDelegate {
+    
+    var lesson: String = "Right View" {
+        didSet {
+        }
+    }
     
     @IBAction func beginPressed(_ sender: Any) {
         
         self.performSegue(withIdentifier: "LessonSegue", sender: self)
     }
     
+    func newLesson(lessonName: String) {
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-                
+            
         let gradient: CAGradientLayer = CAGradientLayer()
         
         let topColor = UIColor(red: 187/255, green: 217/255, blue: 220/255, alpha: 1.0)
@@ -37,7 +47,8 @@ class InitialViewController: UIViewController {
             meditationTime = 10 * 60
         }
     }
-
+    
+    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -48,10 +59,17 @@ class InitialViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DharmaChildSegue" {
+            
+            let dpvc = segue.destination as! DharmaPageViewController
+            dpvc.dharmaDelegate = self
+        }
         
-        if segue.identifier == "LessonSegue" {
-//            let lvc = segue.destination as! LessonViewController
-//            lvc.lessonTitle = pathArray[pageIndex]
+        if segue.identifier == "LessonChildSegue" {
+            
+            let lpvc = segue.destination as! LessonPageViewController
+            lpvc.lessonTitle = self.lesson
+            
         }
     }
 }

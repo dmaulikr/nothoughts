@@ -41,7 +41,7 @@ class MeditationBeginViewController: UIViewController {
         
         if meditationTime > intervalTime && intervalTime != 0 {
             
-            self.settingsButton.setTitle("\(meditationTime / 60) minutes, with bells every \(intervalTime / 60) minutes",
+            self.settingsButton.setTitle("\(meditationTime / 60) minutes with bells every \(intervalTime / 60) minutes",
                 for: .normal)
             
         } else {

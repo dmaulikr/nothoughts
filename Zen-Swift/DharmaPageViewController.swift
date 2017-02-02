@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol DharmaDelegate {
+    func newLesson(lessonName: String)
+}
+
 class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+    
+    var dharmaDelegate: DharmaDelegate?
     
     var pageIndex: Int = 0
     let pathArray = ["Right View", "Right Thinking", "Right Mindfulness", "Right Speech", "Right Action", "Right Diligence", "Right Concentration", "Right Livelihood"]
@@ -27,8 +33,6 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
             previousIndex = pathArray.count - 1
         }
         
-        print("Before")
-        
         return viewControllerAtIndex(index: previousIndex)
     }
     
@@ -41,9 +45,6 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         if (pageIndex == NSNotFound) {
             return nil;
         }
-        
-        print("After")
-        
         
         return viewControllerAtIndex(index: nextIndex)
     }
@@ -58,7 +59,11 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         contentViewController.lessonTitle = pathArray[index]
         contentViewController.index = index
         pageIndex = index
-                        
+        
+        if dharmaDelegate != nil {
+            dharmaDelegate?.newLesson(lessonName: pathArray[pageIndex])
+        }
+        
         return contentViewController
     }
 
