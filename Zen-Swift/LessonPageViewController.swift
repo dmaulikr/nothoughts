@@ -8,17 +8,13 @@
 
 import UIKit
 
-class LessonPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, ControllerDelegate {
-    
-    var lessonTitle: String? {
+class LessonPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+        
+    var index: Int? {
         
         didSet {
-            print("lpvc " + lessonTitle!)
+            print("lpvc " + String(index!))
         }
-    }
-    
-    func changeLesson(lessonTitle: String) {
-        self.lessonTitle = lessonTitle
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -38,9 +34,6 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
         
         // Create a new view controller and pass suitable data.
         let contentViewController = storyboard.instantiateViewController(withIdentifier: "LessonContentViewController") as! LessonContentViewController
-        
-        contentViewController.currentLesson = lessonTitle
-        contentViewController.lessonContent = lessonTitle
         
         return contentViewController
     }
@@ -70,8 +63,6 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
         
         if segue.identifier == "LessonChildSegue" {
          
-            let ivc = segue.destination as! InitialViewController
-            ivc.controllerDelegate = self
         }
     }
 

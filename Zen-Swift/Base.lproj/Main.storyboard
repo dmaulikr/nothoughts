@@ -171,7 +171,6 @@
                                 </constraints>
                                 <connections>
                                     <action selector="meditationTimerPressed:" destination="FWK-QC-c4i" eventType="valueChanged" id="ZxZ-PO-eD8"/>
-                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="XMJ-rp-gfK"/>
                                 </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRq-YM-FkM" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
@@ -182,7 +181,6 @@
                                 </constraints>
                                 <connections>
                                     <action selector="intervalTimerPressed:" destination="FWK-QC-c4i" eventType="valueChanged" id="VMa-r5-fOF"/>
-                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="Rdw-Xw-Bp8"/>
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditation time in minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cze-Sx-E5N">
@@ -298,191 +296,6 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="124.58770614692655"/>
         </scene>
-        <!--Lesson View Controller-->
-        <scene sceneID="Ku9-Un-gHW">
-            <objects>
-                <viewController id="c9L-AL-6w8" customClass="LessonViewController" customModule="Zen_Swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="T1b-Fl-oaP"/>
-                        <viewControllerLayoutGuide type="bottom" id="Pfj-Af-FYX"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="he2-Ie-ijX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iVO-zC-veC" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="88.5" y="447" width="274" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="274" id="1xW-cp-2GT"/>
-                                    <constraint firstAttribute="height" constant="30" id="9Z3-El-xrI"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="timerControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="Sku-EL-1UI"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-eB-RDc" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="89" y="485" width="274" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="274" id="EZL-zK-7Xa"/>
-                                    <constraint firstAttribute="height" constant="30" id="pnL-lq-yp8"/>
-                                </constraints>
-                                <connections>
-                                    <action selector="bellControllerPressed:" destination="c9L-AL-6w8" eventType="valueChanged" id="i0d-tZ-gkB"/>
-                                </connections>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVw-y5-W2X">
-                                <rect key="frame" x="16" y="452" width="64.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bells" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADl-oz-G9I">
-                                <rect key="frame" x="16" y="490" width="38.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-bO-gJM">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <color key="backgroundColor" red="0.49803921569999998" green="0.49803921569999998" blue="0.49803921569999998" alpha="0.25" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0JV-tp-zXY"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <state key="normal" title="Meditate">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="meditatePressed:" destination="c9L-AL-6w8" eventType="touchUpInside" id="hX4-fy-8MT"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qze-Rz-CaA">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="420"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OiE-Lh-mxe">
-                                        <rect key="frame" x="0.0" y="10" width="65" height="34"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="34" id="0cE-Oc-99I"/>
-                                            <constraint firstAttribute="width" constant="65" id="1nC-u5-ZDL"/>
-                                        </constraints>
-                                        <state key="normal" title="Back">
-                                            <color key="titleColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="backPressed:" destination="c9L-AL-6w8" eventType="touchUpInside" id="Btt-Ii-6YY"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xJf-qK-n9j">
-                                        <rect key="frame" x="73" y="2" width="229" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="229" id="DJn-Jm-yMJ"/>
-                                            <constraint firstAttribute="height" constant="50" id="I9k-A2-vNx"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <color key="textColor" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ak-Qq-5fs">
-                                        <rect key="frame" x="8" y="60" width="359" height="352"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="xJf-qK-n9j" firstAttribute="centerX" secondItem="Qze-Rz-CaA" secondAttribute="centerX" id="6g4-Zm-G5a"/>
-                                    <constraint firstItem="OiE-Lh-mxe" firstAttribute="top" secondItem="Qze-Rz-CaA" secondAttribute="top" constant="10" id="Rzr-5S-gCo"/>
-                                    <constraint firstItem="xJf-qK-n9j" firstAttribute="top" secondItem="Qze-Rz-CaA" secondAttribute="top" constant="2" id="THL-Qn-MSC"/>
-                                    <constraint firstItem="OiE-Lh-mxe" firstAttribute="leading" secondItem="Qze-Rz-CaA" secondAttribute="leading" id="fkd-yP-Nvj"/>
-                                    <constraint firstAttribute="height" constant="420" id="pqy-3w-QSK"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hk0-ww-LUO" customClass="SegmentedController" customModule="Zen_Swift" customModuleProvider="target">
-                                <rect key="frame" x="259" y="523" width="104" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="4lK-KN-DWR"/>
-                                    <constraint firstAttribute="width" constant="104" id="Yxl-q1-L4r"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meditate for 30 minutes with a bell every 10 minutes" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F4h-oe-1Ru">
-                                <rect key="frame" x="0.0" y="567" width="375" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="wgH-OI-RSC"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dim On Start" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1S-Nc-v4A">
-                                <rect key="frame" x="148" y="528" width="103" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e6Y-rw-6jG">
-                                <rect key="frame" x="-37" y="577" width="30" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XQp-lu-CdK">
-                                <rect key="frame" x="44" y="528" width="42" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="42" id="DA0-S8-vEG"/>
-                                    <constraint firstAttribute="height" constant="21" id="GXL-7A-4fs"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volumeLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="RoK-cU-UnK">
-                                <rect key="frame" x="16" y="523" width="20" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" red="0.0039215686269999999" green="0.8862745098" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Qze-Rz-CaA" secondAttribute="trailing" id="5Oz-EH-xkI"/>
-                            <constraint firstItem="hk0-ww-LUO" firstAttribute="centerY" secondItem="X1S-Nc-v4A" secondAttribute="centerY" id="8nj-zg-BMu"/>
-                            <constraint firstItem="iVO-zC-veC" firstAttribute="centerY" secondItem="ZVw-y5-W2X" secondAttribute="centerY" id="Ajk-ZW-pii"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ZVw-y5-W2X" secondAttribute="leading" id="B1z-bl-jTd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="hk0-ww-LUO" secondAttribute="trailing" constant="-4" id="BCA-e3-wMs"/>
-                            <constraint firstItem="bd5-eB-RDc" firstAttribute="centerY" secondItem="ADl-oz-G9I" secondAttribute="centerY" id="Clx-jA-hfq"/>
-                            <constraint firstItem="hk0-ww-LUO" firstAttribute="leading" secondItem="X1S-Nc-v4A" secondAttribute="trailing" constant="8" id="F3R-JS-T3b"/>
-                            <constraint firstItem="ADl-oz-G9I" firstAttribute="top" secondItem="ZVw-y5-W2X" secondAttribute="bottom" constant="17" id="H9F-lq-x0K"/>
-                            <constraint firstItem="Qze-Rz-CaA" firstAttribute="top" secondItem="T1b-Fl-oaP" secondAttribute="bottom" id="MyO-xw-5bB"/>
-                            <constraint firstItem="XQp-lu-CdK" firstAttribute="centerY" secondItem="X1S-Nc-v4A" secondAttribute="centerY" id="N63-TJ-IxY"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="ADl-oz-G9I" secondAttribute="leading" id="Q8w-E9-PXk"/>
-                            <constraint firstItem="ZVw-y5-W2X" firstAttribute="top" secondItem="Qze-Rz-CaA" secondAttribute="bottom" constant="32" id="SMR-6k-UBd"/>
-                            <constraint firstItem="bd5-eB-RDc" firstAttribute="leading" secondItem="ADl-oz-G9I" secondAttribute="trailing" constant="34.5" id="UwB-Km-zsK"/>
-                            <constraint firstItem="X1S-Nc-v4A" firstAttribute="leading" secondItem="XQp-lu-CdK" secondAttribute="trailing" constant="62" id="W0d-Xq-QSX"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="F4h-oe-1Ru" secondAttribute="leading" constant="16" id="YQK-J9-IJx"/>
-                            <constraint firstItem="Qze-Rz-CaA" firstAttribute="leading" secondItem="he2-Ie-ijX" secondAttribute="leading" id="YzX-39-Sc0"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="F4h-oe-1Ru" secondAttribute="trailing" constant="-16" id="bjR-eB-Mzb"/>
-                            <constraint firstItem="Pfj-Af-FYX" firstAttribute="top" secondItem="7Qd-bO-gJM" secondAttribute="bottom" id="gjy-Jq-VNM"/>
-                            <constraint firstItem="7Qd-bO-gJM" firstAttribute="leading" secondItem="he2-Ie-ijX" secondAttribute="leading" id="hP1-gC-RIk"/>
-                            <constraint firstItem="iVO-zC-veC" firstAttribute="leading" secondItem="ZVw-y5-W2X" secondAttribute="trailing" constant="8" id="kWM-vF-LgA"/>
-                            <constraint firstItem="F4h-oe-1Ru" firstAttribute="top" secondItem="X1S-Nc-v4A" secondAttribute="bottom" constant="18" id="lIO-qQ-W1d"/>
-                            <constraint firstItem="7Qd-bO-gJM" firstAttribute="top" secondItem="F4h-oe-1Ru" secondAttribute="bottom" constant="8" id="lJ2-fG-Z4P"/>
-                            <constraint firstAttribute="trailing" secondItem="7Qd-bO-gJM" secondAttribute="trailing" id="xM5-dW-egJ"/>
-                        </constraints>
-                    </view>
-                    <nil key="simulatedStatusBarMetrics"/>
-                    <connections>
-                        <outlet property="bellController" destination="bd5-eB-RDc" id="ztf-Hj-Axo"/>
-                        <outlet property="dimmerController" destination="hk0-ww-LUO" id="OX3-Ju-Eev"/>
-                        <outlet property="lessonLabel" destination="7ak-Qq-5fs" id="Ltq-Fc-pPO"/>
-                        <outlet property="settingsLabel" destination="F4h-oe-1Ru" id="Uhk-od-DLw"/>
-                        <outlet property="timerController" destination="iVO-zC-veC" id="RJ7-rS-nX6"/>
-                        <outlet property="titleLabel" destination="xJf-qK-n9j" id="qBk-sK-HNI"/>
-                        <outlet property="volumePercentageLabel" destination="XQp-lu-CdK" id="mfe-bX-wKP"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hgR-Df-lva" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2402" y="-382"/>
-        </scene>
         <!--Meditation View Controller-->
         <scene sceneID="w55-cy-ODv">
             <objects>
@@ -529,10 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GfN-3l-e0f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3156" y="70"/>
+            <point key="canvasLocation" x="2374" y="-142"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="volumeLogo.png" width="20" height="31"/>
-    </resources>
 </document>

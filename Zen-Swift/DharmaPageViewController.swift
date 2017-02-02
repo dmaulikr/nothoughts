@@ -9,7 +9,7 @@
 import UIKit
 
 protocol DharmaDelegate {
-    func newLesson(lessonName: String)
+    func newLesson(lessonIndex: Int)
 }
 
 class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
@@ -61,7 +61,7 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         pageIndex = index
         
         if dharmaDelegate != nil {
-            dharmaDelegate?.newLesson(lessonName: pathArray[pageIndex])
+            dharmaDelegate?.newLesson(lessonIndex: pageIndex)
         }
         
         return contentViewController
