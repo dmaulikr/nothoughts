@@ -8,11 +8,25 @@
 
 import UIKit
 
+
+@objc
+protocol ControllerDelegate {
+    
+    func parentToChild(newIndex: Int)
+}
+
 class InitialViewController: UIViewController, DharmaDelegate {
+    
+    var didDelegate: ControllerDelegate?
+    var willDelegate: ControllerDelegate?
     
     var index: Int = 0 {
         didSet {
             print("ivc " + String(index))
+            
+            if willDelegate != nil {
+                willDelegate?.parentToChild(newIndex: index)
+            }
         }
     }
         
@@ -64,6 +78,7 @@ class InitialViewController: UIViewController, DharmaDelegate {
             
             let lpvc = segue.destination as! LessonPageViewController
             lpvc.index = index
+            self.willDelegate = lpvc
         }
     }
 }

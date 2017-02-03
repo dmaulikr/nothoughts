@@ -8,14 +8,31 @@
 
 import UIKit
 
-class LessonPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
-        
-    var index: Int? {
+class LessonPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, ControllerDelegate {
+    
+    let fileNames = ["right-view", "right-thinking", "right-mindfulness", "right-speech", "right-action", "right-diligence", "right-concentration", "right-livelihood"]
+    
+    var lessonArray: Array <String>!
+    
+    var index: Int = 0 {
         
         didSet {
-            print("lpvc " + String(index!))
+            print("lpvc " + String(index))
+            
+            // Change lesson Array
+            
+            
+            // Set VCs
         }
     }
+    
+    // Controller Delegate
+    
+    func parentToChild(newIndex: Int) {
+        index = newIndex
+    }
+    
+    // Page View methods
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
@@ -43,10 +60,29 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
         setViewControllers([self.viewControllerAtIndex(index: 0)], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
     }
     
+    // Private methods 
+    
+    func setNewLessonArray() {
+        lessonArray = nil
+        let path = Bundle.main.path(forResource: fileNames[index], ofType: ".txt")
+        var fileContent: String!
+        
+        
+        do {
+            fileContent = try String.init(contentsOfFile: path!)
+        } catch {
+            print("Could not read file")
+        }
+        
+        lessonArray = fileContent.components(separatedBy: "\n")
+        
+        print(lessonArray)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.setNewLessonArray()
     }
 
     override func didReceiveMemoryWarning() {
