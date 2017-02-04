@@ -10,17 +10,8 @@ import UIKit
 
 class LessonContentViewController: UIViewController {
 
-    var currentLesson: String! = "Right View" {
-        willSet {
-            
-        }
-    }
-    
-    var lessonContent: String! {
-        didSet{
-            lessonLabel.text = lessonContent
-        }
-    }
+    var pageIndex = Int()
+    var lessonContent = String()
     
     @IBOutlet weak var lessonLabel: UILabel!
     
@@ -29,7 +20,6 @@ class LessonContentViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         lessonLabel.text = lessonContent
-        
     }
 
     override func didReceiveMemoryWarning() {

@@ -77,7 +77,7 @@ class InitialViewController: UIViewController, DharmaDelegate {
         if segue.identifier == "LessonChildSegue" {
             
             let lpvc = segue.destination as! LessonPageViewController
-            lpvc.index = index
+            lpvc.dharmaIndex = index
             self.willDelegate = lpvc
         }
     }

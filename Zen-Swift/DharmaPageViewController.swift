@@ -60,11 +60,17 @@ class DharmaPageViewController: UIPageViewController, UIPageViewControllerDataSo
         contentViewController.index = index
         pageIndex = index
         
-        if dharmaDelegate != nil {
-            dharmaDelegate?.newLesson(lessonIndex: pageIndex)
+        return contentViewController
+    }
+    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+        if completed == true {
+            if dharmaDelegate != nil {
+                dharmaDelegate?.newLesson(lessonIndex: pageIndex)
+            }
         }
         
-        return contentViewController
     }
 
     func presentPageController() {

@@ -13,11 +13,12 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
     let fileNames = ["right-view", "right-thinking", "right-mindfulness", "right-speech", "right-action", "right-diligence", "right-concentration", "right-livelihood"]
     
     var lessonArray: Array <String>!
+    var pageIndex = 0
     
-    var index: Int = 0 {
+    var dharmaIndex: Int = 0 {
         
         didSet {
-            print("lpvc " + String(index))
+            print("lpvc " + String(dharmaIndex))
             
             // Change lesson Array
             
@@ -29,20 +30,39 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
     // Controller Delegate
     
     func parentToChild(newIndex: Int) {
-        index = newIndex
+        dharmaIndex = newIndex
+        pageIndex = 0
+        setNewLessonArray()
     }
     
     // Page View methods
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
         
+        let contentVC = viewController as! LessonContentViewController
+        let currentIndex = contentVC.pageIndex
+        let previousIndex = currentIndex - 1
         
-        return viewControllerAtIndex(index: 0)
+        if currentIndex == NSNotFound || currentIndex == 0 {
+            return nil
+        }
+        
+        return viewControllerAtIndex(index: previousIndex)
     }
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
         
-        return viewControllerAtIndex(index: 0)
+        let contentVC = viewController as! LessonContentViewController
+        let currentIndex = contentVC.pageIndex
+        let nextIndex = currentIndex + 1
+        
+        
+        if currentIndex == NSNotFound || currentIndex == lessonArray.count - 1 {
+            return nil
+        }
+        
+        print(nextIndex)
+        return viewControllerAtIndex(index: nextIndex)
     }
     
     func viewControllerAtIndex(index: NSInteger) -> LessonContentViewController {
@@ -52,21 +72,21 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
         // Create a new view controller and pass suitable data.
         let contentViewController = storyboard.instantiateViewController(withIdentifier: "LessonContentViewController") as! LessonContentViewController
         
+        contentViewController.lessonContent = lessonArray[index]
+        contentViewController.pageIndex = index
+        pageIndex = index
+        
         return contentViewController
     }
     
-    func presentPageController() {
-        
-        setViewControllers([self.viewControllerAtIndex(index: 0)], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
-    }
+    
     
     // Private methods 
     
     func setNewLessonArray() {
         lessonArray = nil
-        let path = Bundle.main.path(forResource: fileNames[index], ofType: ".txt")
+        let path = Bundle.main.path(forResource: fileNames[dharmaIndex], ofType: ".txt")
         var fileContent: String!
-        
         
         do {
             fileContent = try String.init(contentsOfFile: path!)
@@ -74,14 +94,17 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
             print("Could not read file")
         }
         
-        lessonArray = fileContent.components(separatedBy: "\n")
+        lessonArray = fileContent.components(separatedBy: "~")
         
-        print(lessonArray)
+        setViewControllers([self.viewControllerAtIndex(index: 0)], direction: .forward, animated: false, completion: nil)
+//        print(lessonArray)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.delegate = self
+        self.dataSource = self
         self.setNewLessonArray()
     }
 

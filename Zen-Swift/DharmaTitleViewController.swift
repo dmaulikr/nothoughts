@@ -10,10 +10,10 @@ import UIKit
 
 class DharmaTitleViewController: UIViewController {
     
-    @IBOutlet weak var lessonLabel: UILabel!
-    
     var lessonTitle = String()
     var index = Int()
+    
+    @IBOutlet weak var lessonLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
