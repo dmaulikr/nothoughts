@@ -12,7 +12,7 @@ class LessonContentViewController: UIViewController {
 
     var pageIndex = Int()
     var lessonContent = String()
-    
+        
     @IBOutlet weak var lessonLabel: UILabel!
     
     override func viewDidLoad() {

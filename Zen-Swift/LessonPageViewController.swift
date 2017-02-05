@@ -76,10 +76,14 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
         contentViewController.pageIndex = index
         pageIndex = index
         
+        UIView.animate(withDuration: 0.5, animations: { self.view.alpha = 1 })
+        
         return contentViewController
     }
     
-    
+    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
+        
+    }
     
     // Private methods 
     
@@ -96,7 +100,12 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
         
         lessonArray = fileContent.components(separatedBy: "~")
         
-        setViewControllers([self.viewControllerAtIndex(index: 0)], direction: .forward, animated: false, completion: nil)
+        
+        UIView.animate(withDuration: 0.5, animations: { self.view.alpha = 0} , completion: {Bool in
+        
+            self.setViewControllers([self.viewControllerAtIndex(index: 0)], direction: .forward, animated: false, completion: nil)
+        })
+        
 //        print(lessonArray)
     }
     
