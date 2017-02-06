@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CACB9601E1AE65800777244"
-               BuildableName = "Zen-Swift.app"
-               BlueprintName = "Zen-Swift"
+               BuildableName = "Mindful.app"
+               BlueprintName = "Mindful"
                ReferencedContainer = "container:Mindful.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CACB9741E1AE65800777244"
-               BuildableName = "Zen-SwiftTests.xctest"
-               BlueprintName = "Zen-SwiftTests"
+               BuildableName = "MindfulTests.xctest"
+               BlueprintName = "MindfulTests"
                ReferencedContainer = "container:Mindful.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CACB97F1E1AE65800777244"
-               BuildableName = "Zen-SwiftUITests.xctest"
-               BlueprintName = "Zen-SwiftUITests"
+               BuildableName = "MindfulUITests.xctest"
+               BlueprintName = "MindfulUITests"
                ReferencedContainer = "container:Mindful.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -53,8 +53,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8CACB9601E1AE65800777244"
-            BuildableName = "Zen-Swift.app"
-            BlueprintName = "Zen-Swift"
+            BuildableName = "Mindful.app"
+            BlueprintName = "Mindful"
             ReferencedContainer = "container:Mindful.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8CACB9601E1AE65800777244"
-            BuildableName = "Zen-Swift.app"
-            BlueprintName = "Zen-Swift"
+            BuildableName = "Mindful.app"
+            BlueprintName = "Mindful"
             ReferencedContainer = "container:Mindful.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -102,8 +102,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8CACB9601E1AE65800777244"
-            BuildableName = "Zen-Swift.app"
-            BlueprintName = "Zen-Swift"
+            BuildableName = "Mindful.app"
+            BlueprintName = "Mindful"
             ReferencedContainer = "container:Mindful.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
