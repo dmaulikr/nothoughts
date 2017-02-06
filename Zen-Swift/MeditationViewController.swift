@@ -85,7 +85,7 @@ class MeditationViewController: UIViewController {
         // Init dynamic
         processor = AKDynamicsProcessor(reverb)
         processor.stop()
-        processor.headRoom = 0.5
+        processor.headRoom = 0.1
         processor.masterGain = 40
         
         // Start audio
@@ -179,8 +179,9 @@ class MeditationViewController: UIViewController {
         gradient.frame = self.view.frame
         self.view.layer.insertSublayer(gradient, at: 0)
         
+        AKSettings.playbackWhileMuted = true
         warmUpCountDown()
-        
+    
 //        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in self.meditation()})
     }
     

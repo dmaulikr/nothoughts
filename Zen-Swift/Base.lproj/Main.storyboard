@@ -126,7 +126,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="73c-tJ-k5m">
-                                <rect key="frame" x="16" y="229" width="343" height="30"/>
+                                <rect key="frame" x="16" y="204" width="343" height="30"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="343" id="hiN-oz-Ly6"/>
@@ -138,13 +138,24 @@
                                     <action selector="settingsPressed:" destination="fli-Gz-8ha" eventType="touchUpInside" id="sgW-XO-OE1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP0-Ka-9YM">
+                                <rect key="frame" x="186" y="254" width="59" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="volume-shape.png" translatesAutoresizingMaskIntoConstraints="NO" id="afj-Fk-EPC">
+                                <rect key="frame" x="160" y="252" width="18" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fPV-o7-aie" firstAttribute="centerY" secondItem="6FP-TC-2Jn" secondAttribute="centerY" id="aps-lV-lta"/>
                             <constraint firstItem="fPV-o7-aie" firstAttribute="centerX" secondItem="6FP-TC-2Jn" secondAttribute="centerX" id="cmq-kg-h5l"/>
                             <constraint firstItem="73c-tJ-k5m" firstAttribute="centerX" secondItem="6FP-TC-2Jn" secondAttribute="centerX" id="j1e-Cp-qjz"/>
-                            <constraint firstItem="wzX-CI-qtL" firstAttribute="top" secondItem="73c-tJ-k5m" secondAttribute="bottom" constant="37" id="m0G-l9-zmy"/>
+                            <constraint firstItem="wzX-CI-qtL" firstAttribute="top" secondItem="73c-tJ-k5m" secondAttribute="bottom" constant="62" id="m0G-l9-zmy"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -152,6 +163,7 @@
                     <size key="freeformSize" width="375" height="296"/>
                     <connections>
                         <outlet property="settingsButton" destination="73c-tJ-k5m" id="ArQ-WI-WpI"/>
+                        <outlet property="volumePercentageLabel" destination="mP0-Ka-9YM" id="LSG-Wd-jkz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BDE-kW-7MJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -352,4 +364,7 @@
             <point key="canvasLocation" x="2374" y="-142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="volume-shape.png" width="18" height="24"/>
+    </resources>
 </document>

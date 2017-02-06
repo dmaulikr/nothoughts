@@ -15,6 +15,7 @@
 		8C416A851E3F79B50018F999 /* LessonContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A841E3F79B50018F999 /* LessonContentViewController.swift */; };
 		8C416A871E3F7DB10018F999 /* MeditationBeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A861E3F7DB10018F999 /* MeditationBeginViewController.swift */; };
 		8C416A891E3F7DC10018F999 /* MeditationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A881E3F7DC10018F999 /* MeditationSettingsViewController.swift */; };
+		8C5D61CD1E47E29D008845D6 /* volume-shape.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5D61CC1E47E29D008845D6 /* volume-shape.png */; };
 		8CA763031E3906F900A4FE55 /* right-action.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FB1E3906F900A4FE55 /* right-action.txt */; };
 		8CA763041E3906F900A4FE55 /* right-concentration.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FC1E3906F900A4FE55 /* right-concentration.txt */; };
 		8CA763051E3906F900A4FE55 /* right-diligence.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FD1E3906F900A4FE55 /* right-diligence.txt */; };
@@ -23,7 +24,6 @@
 		8CA763081E3906F900A4FE55 /* right-speech.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA763001E3906F900A4FE55 /* right-speech.txt */; };
 		8CA763091E3906F900A4FE55 /* right-thinking.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA763011E3906F900A4FE55 /* right-thinking.txt */; };
 		8CA7630A1E3906F900A4FE55 /* right-view.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA763021E3906F900A4FE55 /* right-view.txt */; };
-		8CAA161A1E32777D00AC613D /* volumeLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8CAA16191E32777D00AC613D /* volumeLogo.png */; };
 		8CACB9651E1AE65800777244 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9641E1AE65800777244 /* AppDelegate.swift */; };
 		8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9661E1AE65800777244 /* InitialViewController.swift */; };
 		8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB9681E1AE65800777244 /* Main.storyboard */; };
@@ -77,6 +77,7 @@
 		8C416A841E3F79B50018F999 /* LessonContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonContentViewController.swift; sourceTree = "<group>"; };
 		8C416A861E3F7DB10018F999 /* MeditationBeginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationBeginViewController.swift; sourceTree = "<group>"; };
 		8C416A881E3F7DC10018F999 /* MeditationSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationSettingsViewController.swift; sourceTree = "<group>"; };
+		8C5D61CC1E47E29D008845D6 /* volume-shape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "volume-shape.png"; sourceTree = "<group>"; };
 		8CA762FB1E3906F900A4FE55 /* right-action.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-action.txt"; sourceTree = "<group>"; };
 		8CA762FC1E3906F900A4FE55 /* right-concentration.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-concentration.txt"; sourceTree = "<group>"; };
 		8CA762FD1E3906F900A4FE55 /* right-diligence.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-diligence.txt"; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		8CA763001E3906F900A4FE55 /* right-speech.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-speech.txt"; sourceTree = "<group>"; };
 		8CA763011E3906F900A4FE55 /* right-thinking.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-thinking.txt"; sourceTree = "<group>"; };
 		8CA763021E3906F900A4FE55 /* right-view.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-view.txt"; sourceTree = "<group>"; };
-		8CAA16191E32777D00AC613D /* volumeLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = volumeLogo.png; sourceTree = "<group>"; };
 		8CACB9611E1AE65800777244 /* Zen-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zen-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9641E1AE65800777244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CACB9661E1AE65800777244 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
@@ -206,10 +206,10 @@
 				8CACB9921E1AE71900777244 /* LessonViewController.swift */,
 				8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */,
 				8C3742271E2D199D00901883 /* SegmentedController.swift */,
+				8C5D61CC1E47E29D008845D6 /* volume-shape.png */,
 				8CACB9681E1AE65800777244 /* Main.storyboard */,
 				8CACB96B1E1AE65800777244 /* Assets.xcassets */,
 				8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */,
-				8CAA16191E32777D00AC613D /* volumeLogo.png */,
 				8CACB9701E1AE65800777244 /* Info.plist */,
 			);
 			path = "Zen-Swift";
@@ -350,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */,
+				8C5D61CD1E47E29D008845D6 /* volume-shape.png in Resources */,
 				8CA763031E3906F900A4FE55 /* right-action.txt in Resources */,
 				8CACB96C1E1AE65800777244 /* Assets.xcassets in Resources */,
 				8CA763081E3906F900A4FE55 /* right-speech.txt in Resources */,
@@ -358,7 +359,6 @@
 				8CA7630A1E3906F900A4FE55 /* right-view.txt in Resources */,
 				8CA763091E3906F900A4FE55 /* right-thinking.txt in Resources */,
 				8CA763061E3906F900A4FE55 /* right-livelihood.txt in Resources */,
-				8CAA161A1E32777D00AC613D /* volumeLogo.png in Resources */,
 				8CACB96A1E1AE65800777244 /* Main.storyboard in Resources */,
 				8CA763051E3906F900A4FE55 /* right-diligence.txt in Resources */,
 			);

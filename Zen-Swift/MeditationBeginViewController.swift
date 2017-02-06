@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
 class MeditationBeginViewController: UIViewController {
 
     let index = 0
+    let audioSession = AVAudioSession.sharedInstance()
     
     @IBOutlet weak var settingsButton: UIButton!
+    @IBOutlet weak var volumePercentageLabel: UILabel!
     
     @IBAction func beginPressed(_ sender: Any) {
         let meditationVc = self.storyboard?.instantiateViewController(withIdentifier: "MeditationViewController") as! MeditationViewController
@@ -25,6 +28,25 @@ class MeditationBeginViewController: UIViewController {
     @IBAction func settingsPressed(_ sender: Any) {
         
         
+    }
+    
+    func listenVolumeButton() {
+        
+        do {
+            try audioSession.setActive(true)
+        } catch {
+            print("some error")
+        }
+        audioSession.addObserver(self, forKeyPath: "outputVolume", options: NSKeyValueObservingOptions.new, context: nil)
+    }
+    
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+        if keyPath == "outputVolume" {
+            
+            let volumePercentage = Int(audioSession.outputVolume * 100)
+            volumePercentageLabel.text = "\(volumePercentage)%"
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +69,10 @@ class MeditationBeginViewController: UIViewController {
             self.settingsButton.setTitle("\(meditationTime / 60) minutes",
                 for: .normal)
         }
+        
+        let volumePercentage = Int(audioSession.outputVolume * 100)
+        volumePercentageLabel.text = "\(volumePercentage)%"
+        listenVolumeButton()
         
     }
 

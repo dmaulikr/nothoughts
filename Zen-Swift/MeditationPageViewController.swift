@@ -12,7 +12,7 @@ class MeditationPageViewController: UIPageViewController, UIPageViewControllerDe
     
     var pages: [UIViewController] = []
     var pageIndex = 0
-    
+        
     // Page Before
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
                 
