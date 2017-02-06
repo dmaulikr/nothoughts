@@ -9,10 +9,16 @@
 import UIKit
 import AVFoundation
 
+protocol MeditationDelegate {
+    func nextPagePressed()
+}
+
 class MeditationBeginViewController: UIViewController {
 
     let index = 0
     let audioSession = AVAudioSession.sharedInstance()
+    
+    var meditationDelegate: MeditationDelegate?
     
     @IBOutlet weak var settingsButton: UIButton!
     @IBOutlet weak var volumePercentageLabel: UILabel!
@@ -27,7 +33,9 @@ class MeditationBeginViewController: UIViewController {
     
     @IBAction func settingsPressed(_ sender: Any) {
         
-        
+        if meditationDelegate != nil {
+            meditationDelegate?.nextPagePressed()
+        }
     }
     
     func listenVolumeButton() {

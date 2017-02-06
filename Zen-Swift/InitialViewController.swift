@@ -40,8 +40,8 @@ class InitialViewController: UIViewController, DharmaDelegate {
             
         let gradient: CAGradientLayer = CAGradientLayer()
         
-        let topColor = UIColor(red: 187/255, green: 217/255, blue: 220/255, alpha: 1.0)
-        let bottomColor = UIColor(red: 70/255, green: 217/255, blue: 212/255, alpha: 1.0)
+        let topColor = UIColor(red: 164/255, green: 190/255, blue: 250/255, alpha: 1.0)
+        let bottomColor = UIColor(red: 131/255, green: 163/255, blue: 195/255, alpha: 1.0)
         
         gradient.colors = [topColor.cgColor, bottomColor.cgColor]
         gradient.startPoint = CGPoint(x: 0.0, y: 0.0)

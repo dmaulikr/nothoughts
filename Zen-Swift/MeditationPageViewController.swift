@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MeditationPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource {
+class MeditationPageViewController: UIPageViewController, UIPageViewControllerDelegate, UIPageViewControllerDataSource, MeditationDelegate {
     
     var pages: [UIViewController] = []
     var pageIndex = 0
@@ -32,6 +32,8 @@ class MeditationPageViewController: UIPageViewController, UIPageViewControllerDe
         return (index == self.pages.count - 1 ? nil : self.pages[index + 1])
     }
     
+    
+    
     func presentPageViewController() {
         
         self.pages = [
@@ -43,6 +45,10 @@ class MeditationPageViewController: UIPageViewController, UIPageViewControllerDe
         setViewControllers([startingViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: true, completion: nil)
     }
     
+    func nextPagePressed() {
+        setViewControllers([self.pages.last!], direction: .forward, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -50,6 +56,7 @@ class MeditationPageViewController: UIPageViewController, UIPageViewControllerDe
         self.dataSource = self
         self.delegate = self
         self.presentPageViewController()
+        (self.pages.first as! MeditationBeginViewController).meditationDelegate = self
     }
 
     override func didReceiveMemoryWarning() {

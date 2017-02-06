@@ -81,10 +81,13 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
         return contentViewController
     }
     
-    func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
-        
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        return lessonArray.count
     }
     
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        return pageIndex
+    }
     // Private methods 
     
     func setNewLessonArray() {

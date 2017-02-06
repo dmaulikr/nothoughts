@@ -54,12 +54,12 @@ class MeditationViewController: UIViewController {
         oscillator = AKOscillator()
         oscillator.stop()
         oscillator.amplitude = 2
-        oscillator.frequency = random(440.0, 500.0)
+        oscillator.frequency = random(400.0, 600.0)
         
         // Init filter
         filter = AKLowPassFilter(oscillator)
         filter.stop()
-        filter.cutoffFrequency = 8500
+        filter.cutoffFrequency = 5000
         
         // Init envelope
         envelope = AKAmplitudeEnvelope(filter)
@@ -74,7 +74,7 @@ class MeditationViewController: UIViewController {
         delay.stop()
         delay.time = random(0.01, 0.8)
         delay.dryWetMix = 1.0
-        delay.feedback = 0.3
+        delay.feedback = 0.6
         
         // Init reverb
         reverb = AKReverb(delay)
@@ -88,6 +88,11 @@ class MeditationViewController: UIViewController {
         processor.headRoom = 0.1
         processor.masterGain = 40
         
+        
+    }
+    
+    func playBell() {
+     
         // Start audio
         AudioKit.stop()
         AudioKit.output = reverb
@@ -99,6 +104,7 @@ class MeditationViewController: UIViewController {
         processor.start()
         
         Timer.scheduledTimer(withTimeInterval: 0.3, repeats: false, block: {(timer) in self.envelope.stop()})
+        
     }
     
     func warmUpCountDown() {
@@ -124,7 +130,7 @@ class MeditationViewController: UIViewController {
 
     func meditation() {
         
-        self.initializeBell()
+        self.playBell()
         UIApplication.shared.isIdleTimerDisabled = true
         
         print(meditationTime)
@@ -138,7 +144,7 @@ class MeditationViewController: UIViewController {
             // Interval bells timer
             self.intervalTimer = Timer.scheduledTimer(withTimeInterval: bellIntervals, repeats: true, block: { (timer) in
                 
-                self.initializeBell()
+                self.playBell()
                 bellNumber += 1
                 
                 if bellNumber == numberOfBells {
@@ -169,8 +175,8 @@ class MeditationViewController: UIViewController {
         // Do any additional setup after loading the view.
         let gradient: CAGradientLayer = CAGradientLayer()
         
-        let topColor = UIColor(red: 187/255, green: 217/255, blue: 220/255, alpha: 1.0)
-        let bottomColor = UIColor(red: 70/255, green: 217/255, blue: 212/255, alpha: 1.0)
+        let topColor = UIColor(red: 131/255, green: 163/255, blue: 195/255, alpha: 1.0)
+        let bottomColor = UIColor(red: 164/255, green: 190/255, blue: 250/255, alpha: 1.0)
         
         gradient.colors = [topColor.cgColor, bottomColor.cgColor]
         gradient.locations = [0.0 , 1.0]
@@ -180,6 +186,7 @@ class MeditationViewController: UIViewController {
         self.view.layer.insertSublayer(gradient, at: 0)
         
         AKSettings.playbackWhileMuted = true
+        initializeBell()
         warmUpCountDown()
     
 //        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: false, block: { (timer) in self.meditation()})
