@@ -551,7 +551,7 @@
 				);
 				INFOPLIST_FILE = "Zen-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.No-Thoughts";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.NoThoughts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -568,7 +568,7 @@
 				);
 				INFOPLIST_FILE = "Zen-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.No-Thoughts";
+				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.NoThoughts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
