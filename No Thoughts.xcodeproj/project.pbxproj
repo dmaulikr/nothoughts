@@ -85,17 +85,17 @@
 		8CA763001E3906F900A4FE55 /* right-speech.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-speech.txt"; sourceTree = "<group>"; };
 		8CA763011E3906F900A4FE55 /* right-thinking.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-thinking.txt"; sourceTree = "<group>"; };
 		8CA763021E3906F900A4FE55 /* right-view.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "right-view.txt"; sourceTree = "<group>"; };
-		8CACB9611E1AE65800777244 /* Mindful.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mindful.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CACB9611E1AE65800777244 /* No Thoughts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "No Thoughts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9641E1AE65800777244 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CACB9661E1AE65800777244 /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		8CACB9691E1AE65800777244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8CACB96B1E1AE65800777244 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CACB96E1E1AE65800777244 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CACB9701E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CACB9751E1AE65800777244 /* MindfulTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindfulTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CACB9751E1AE65800777244 /* No ThoughtsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No ThoughtsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9791E1AE65800777244 /* Zen_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zen_SwiftTests.swift; sourceTree = "<group>"; };
 		8CACB97B1E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CACB9801E1AE65800777244 /* MindfulUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MindfulUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CACB9801E1AE65800777244 /* No ThoughtsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "No ThoughtsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zen_SwiftUITests.swift; sourceTree = "<group>"; };
 		8CACB9861E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8CACB9941E1AE75C00777244 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
@@ -186,9 +186,9 @@
 		8CACB9621E1AE65800777244 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8CACB9611E1AE65800777244 /* Mindful.app */,
-				8CACB9751E1AE65800777244 /* MindfulTests.xctest */,
-				8CACB9801E1AE65800777244 /* MindfulUITests.xctest */,
+				8CACB9611E1AE65800777244 /* No Thoughts.app */,
+				8CACB9751E1AE65800777244 /* No ThoughtsTests.xctest */,
+				8CACB9801E1AE65800777244 /* No ThoughtsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,9 +233,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8CACB9601E1AE65800777244 /* Mindful */ = {
+		8CACB9601E1AE65800777244 /* No Thoughts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CACB9891E1AE65800777244 /* Build configuration list for PBXNativeTarget "Mindful" */;
+			buildConfigurationList = 8CACB9891E1AE65800777244 /* Build configuration list for PBXNativeTarget "No Thoughts" */;
 			buildPhases = (
 				8CACB95D1E1AE65800777244 /* Sources */,
 				8CACB95E1E1AE65800777244 /* Frameworks */,
@@ -246,14 +246,14 @@
 			);
 			dependencies = (
 			);
-			name = Mindful;
+			name = "No Thoughts";
 			productName = "Zen-Swift";
-			productReference = 8CACB9611E1AE65800777244 /* Mindful.app */;
+			productReference = 8CACB9611E1AE65800777244 /* No Thoughts.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8CACB9741E1AE65800777244 /* MindfulTests */ = {
+		8CACB9741E1AE65800777244 /* No ThoughtsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CACB98C1E1AE65800777244 /* Build configuration list for PBXNativeTarget "MindfulTests" */;
+			buildConfigurationList = 8CACB98C1E1AE65800777244 /* Build configuration list for PBXNativeTarget "No ThoughtsTests" */;
 			buildPhases = (
 				8CACB9711E1AE65800777244 /* Sources */,
 				8CACB9721E1AE65800777244 /* Frameworks */,
@@ -264,14 +264,14 @@
 			dependencies = (
 				8CACB9771E1AE65800777244 /* PBXTargetDependency */,
 			);
-			name = MindfulTests;
+			name = "No ThoughtsTests";
 			productName = "Zen-SwiftTests";
-			productReference = 8CACB9751E1AE65800777244 /* MindfulTests.xctest */;
+			productReference = 8CACB9751E1AE65800777244 /* No ThoughtsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8CACB97F1E1AE65800777244 /* MindfulUITests */ = {
+		8CACB97F1E1AE65800777244 /* No ThoughtsUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8CACB98F1E1AE65800777244 /* Build configuration list for PBXNativeTarget "MindfulUITests" */;
+			buildConfigurationList = 8CACB98F1E1AE65800777244 /* Build configuration list for PBXNativeTarget "No ThoughtsUITests" */;
 			buildPhases = (
 				8CACB97C1E1AE65800777244 /* Sources */,
 				8CACB97D1E1AE65800777244 /* Frameworks */,
@@ -282,9 +282,9 @@
 			dependencies = (
 				8CACB9821E1AE65800777244 /* PBXTargetDependency */,
 			);
-			name = MindfulUITests;
+			name = "No ThoughtsUITests";
 			productName = "Zen-SwiftUITests";
-			productReference = 8CACB9801E1AE65800777244 /* MindfulUITests.xctest */;
+			productReference = 8CACB9801E1AE65800777244 /* No ThoughtsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -321,7 +321,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "Mindful" */;
+			buildConfigurationList = 8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "No Thoughts" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -334,9 +334,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8CACB9601E1AE65800777244 /* Mindful */,
-				8CACB9741E1AE65800777244 /* MindfulTests */,
-				8CACB97F1E1AE65800777244 /* MindfulUITests */,
+				8CACB9601E1AE65800777244 /* No Thoughts */,
+				8CACB9741E1AE65800777244 /* No ThoughtsTests */,
+				8CACB97F1E1AE65800777244 /* No ThoughtsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -417,12 +417,12 @@
 /* Begin PBXTargetDependency section */
 		8CACB9771E1AE65800777244 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CACB9601E1AE65800777244 /* Mindful */;
+			target = 8CACB9601E1AE65800777244 /* No Thoughts */;
 			targetProxy = 8CACB9761E1AE65800777244 /* PBXContainerItemProxy */;
 		};
 		8CACB9821E1AE65800777244 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 8CACB9601E1AE65800777244 /* Mindful */;
+			target = 8CACB9601E1AE65800777244 /* No Thoughts */;
 			targetProxy = 8CACB9811E1AE65800777244 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -551,7 +551,7 @@
 				);
 				INFOPLIST_FILE = "Zen-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.No-Thoughts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -568,7 +568,7 @@
 				);
 				INFOPLIST_FILE = "Zen-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.No-Thoughts";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -585,7 +585,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mindful.app/Mindful";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/No Thoughts.app/No Thoughts";
 			};
 			name = Debug;
 		};
@@ -600,7 +600,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.RicardoNazario.Zen-SwiftTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mindful.app/Mindful";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/No Thoughts.app/No Thoughts";
 			};
 			name = Release;
 		};
@@ -635,7 +635,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "Mindful" */ = {
+		8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "No Thoughts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CACB9871E1AE65800777244 /* Debug */,
@@ -644,7 +644,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CACB9891E1AE65800777244 /* Build configuration list for PBXNativeTarget "Mindful" */ = {
+		8CACB9891E1AE65800777244 /* Build configuration list for PBXNativeTarget "No Thoughts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CACB98A1E1AE65800777244 /* Debug */,
@@ -653,7 +653,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CACB98C1E1AE65800777244 /* Build configuration list for PBXNativeTarget "MindfulTests" */ = {
+		8CACB98C1E1AE65800777244 /* Build configuration list for PBXNativeTarget "No ThoughtsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CACB98D1E1AE65800777244 /* Debug */,
@@ -662,7 +662,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8CACB98F1E1AE65800777244 /* Build configuration list for PBXNativeTarget "MindfulUITests" */ = {
+		8CACB98F1E1AE65800777244 /* Build configuration list for PBXNativeTarget "No ThoughtsUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CACB9901E1AE65800777244 /* Debug */,

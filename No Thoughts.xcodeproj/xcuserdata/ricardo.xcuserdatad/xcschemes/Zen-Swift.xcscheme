@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CACB9601E1AE65800777244"
-               BuildableName = "Mindful.app"
-               BlueprintName = "Mindful"
-               ReferencedContainer = "container:Mindful.xcodeproj">
+               BuildableName = "No Thoughts.app"
+               BlueprintName = "No Thoughts"
+               ReferencedContainer = "container:No Thoughts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CACB9741E1AE65800777244"
-               BuildableName = "MindfulTests.xctest"
-               BlueprintName = "MindfulTests"
-               ReferencedContainer = "container:Mindful.xcodeproj">
+               BuildableName = "No ThoughtsTests.xctest"
+               BlueprintName = "No ThoughtsTests"
+               ReferencedContainer = "container:No Thoughts.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "8CACB97F1E1AE65800777244"
-               BuildableName = "MindfulUITests.xctest"
-               BlueprintName = "MindfulUITests"
-               ReferencedContainer = "container:Mindful.xcodeproj">
+               BuildableName = "No ThoughtsUITests.xctest"
+               BlueprintName = "No ThoughtsUITests"
+               ReferencedContainer = "container:No Thoughts.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8CACB9601E1AE65800777244"
-            BuildableName = "Mindful.app"
-            BlueprintName = "Mindful"
-            ReferencedContainer = "container:Mindful.xcodeproj">
+            BuildableName = "No Thoughts.app"
+            BlueprintName = "No Thoughts"
+            ReferencedContainer = "container:No Thoughts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8CACB9601E1AE65800777244"
-            BuildableName = "Mindful.app"
-            BlueprintName = "Mindful"
-            ReferencedContainer = "container:Mindful.xcodeproj">
+            BuildableName = "No Thoughts.app"
+            BlueprintName = "No Thoughts"
+            ReferencedContainer = "container:No Thoughts.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -102,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "8CACB9601E1AE65800777244"
-            BuildableName = "Mindful.app"
-            BlueprintName = "Mindful"
-            ReferencedContainer = "container:Mindful.xcodeproj">
+            BuildableName = "No Thoughts.app"
+            BlueprintName = "No Thoughts"
+            ReferencedContainer = "container:No Thoughts.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
