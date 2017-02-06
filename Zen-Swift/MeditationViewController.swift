@@ -133,9 +133,6 @@ class MeditationViewController: UIViewController {
         self.playBell()
         UIApplication.shared.isIdleTimerDisabled = true
         
-        print(meditationTime)
-        print(bellIntervals)
-        
         if bellIntervals > 0 {
             
             let numberOfBells = Int(meditationTime / bellIntervals)

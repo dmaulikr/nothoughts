@@ -22,7 +22,6 @@ class InitialViewController: UIViewController, DharmaDelegate {
     
     var index: Int = 0 {
         didSet {
-            print("ivc " + String(index))
             
             if willDelegate != nil {
                 willDelegate?.parentToChild(newIndex: index)

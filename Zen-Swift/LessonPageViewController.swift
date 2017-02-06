@@ -15,17 +15,7 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
     var lessonArray: Array <String>!
     var pageIndex = 0
     
-    var dharmaIndex: Int = 0 {
-        
-        didSet {
-            print("lpvc " + String(dharmaIndex))
-            
-            // Change lesson Array
-            
-            
-            // Set VCs
-        }
-    }
+    var dharmaIndex: Int = 0
     
     // Controller Delegate
     
@@ -61,7 +51,6 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
             return nil
         }
         
-        print(nextIndex)
         return viewControllerAtIndex(index: nextIndex)
     }
     
@@ -108,8 +97,6 @@ class LessonPageViewController: UIPageViewController, UIPageViewControllerDelega
         
             self.setViewControllers([self.viewControllerAtIndex(index: 0)], direction: .forward, animated: false, completion: nil)
         })
-        
-//        print(lessonArray)
     }
     
     override func viewDidLoad() {

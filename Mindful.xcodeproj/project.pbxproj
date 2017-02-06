@@ -31,7 +31,6 @@
 		8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */; };
 		8CACB97A1E1AE65800777244 /* Zen_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9791E1AE65800777244 /* Zen_SwiftTests.swift */; };
 		8CACB9851E1AE65800777244 /* Zen_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */; };
-		8CACB9931E1AE71900777244 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9921E1AE71900777244 /* LessonViewController.swift */; };
 		8CACB9951E1AE75C00777244 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; };
 		8CACB9961E1AE75C00777244 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CD171AB1E2FC4F000BF3BCD /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */; };
@@ -99,7 +98,6 @@
 		8CACB9801E1AE65800777244 /* Zen-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zen-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zen_SwiftUITests.swift; sourceTree = "<group>"; };
 		8CACB9861E1AE65800777244 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8CACB9921E1AE71900777244 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		8CACB9941E1AE75C00777244 /* AudioKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AudioKit.framework; sourceTree = "<group>"; };
 		8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeditationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,7 +201,6 @@
 				8C416A801E3F79700018F999 /* Top */,
 				8C416A7C1E3F78330018F999 /* Middle */,
 				8C416A7D1E3F783E0018F999 /* Bottom */,
-				8CACB9921E1AE71900777244 /* LessonViewController.swift */,
 				8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */,
 				8C3742271E2D199D00901883 /* SegmentedController.swift */,
 				8C5D61CE1E48D282008845D6 /* volume-shape.png */,
@@ -324,7 +321,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "Zen-Swift" */;
+			buildConfigurationList = 8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "Mindful" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -386,7 +383,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CACB9671E1AE65800777244 /* InitialViewController.swift in Sources */,
-				8CACB9931E1AE71900777244 /* LessonViewController.swift in Sources */,
 				8C416A771E3D42520018F999 /* DharmaPageViewController.swift in Sources */,
 				8C416A7F1E3F786D0018F999 /* MeditationPageViewController.swift in Sources */,
 				8C3742281E2D199D00901883 /* SegmentedController.swift in Sources */,
@@ -639,7 +635,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "Zen-Swift" */ = {
+		8CACB95C1E1AE65800777244 /* Build configuration list for PBXProject "Mindful" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8CACB9871E1AE65800777244 /* Debug */,
