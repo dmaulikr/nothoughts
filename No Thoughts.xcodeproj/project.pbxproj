@@ -16,6 +16,8 @@
 		8C416A871E3F7DB10018F999 /* MeditationBeginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A861E3F7DB10018F999 /* MeditationBeginViewController.swift */; };
 		8C416A891E3F7DC10018F999 /* MeditationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C416A881E3F7DC10018F999 /* MeditationSettingsViewController.swift */; };
 		8C5D61CF1E48D282008845D6 /* volume-shape.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C5D61CE1E48D282008845D6 /* volume-shape.png */; };
+		8C684E531E4901E200D10E4D /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; };
+		8C684E561E4902D900D10E4D /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CA763031E3906F900A4FE55 /* right-action.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FB1E3906F900A4FE55 /* right-action.txt */; };
 		8CA763041E3906F900A4FE55 /* right-concentration.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FC1E3906F900A4FE55 /* right-concentration.txt */; };
 		8CA763051E3906F900A4FE55 /* right-diligence.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CA762FD1E3906F900A4FE55 /* right-diligence.txt */; };
@@ -31,8 +33,6 @@
 		8CACB96F1E1AE65800777244 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CACB96D1E1AE65800777244 /* LaunchScreen.storyboard */; };
 		8CACB97A1E1AE65800777244 /* Zen_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9791E1AE65800777244 /* Zen_SwiftTests.swift */; };
 		8CACB9851E1AE65800777244 /* Zen_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CACB9841E1AE65800777244 /* Zen_SwiftUITests.swift */; };
-		8CACB9951E1AE75C00777244 /* AudioKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; };
-		8CACB9961E1AE75C00777244 /* AudioKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8CACB9941E1AE75C00777244 /* AudioKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CD171AB1E2FC4F000BF3BCD /* MeditationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD171AA1E2FC4F000BF3BCD /* MeditationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,13 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8CACB9971E1AE75C00777244 /* Embed Frameworks */ = {
+		8C684E551E4901E300D10E4D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8CACB9961E1AE75C00777244 /* AudioKit.framework in Embed Frameworks */,
+				8C684E561E4902D900D10E4D /* AudioKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,7 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CACB9951E1AE75C00777244 /* AudioKit.framework in Frameworks */,
+				8C684E531E4901E200D10E4D /* AudioKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +240,8 @@
 				8CACB95D1E1AE65800777244 /* Sources */,
 				8CACB95E1E1AE65800777244 /* Frameworks */,
 				8CACB95F1E1AE65800777244 /* Resources */,
-				8CACB9971E1AE75C00777244 /* Embed Frameworks */,
+				8C684E551E4901E300D10E4D /* Embed Frameworks */,
+				8CEC4B401E4905660022BEF2 /* "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/AudioKit.framework/fix-framework.sh" */,
 			);
 			buildRules = (
 			);
@@ -376,6 +377,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8CEC4B401E4905660022BEF2 /* "$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/AudioKit.framework/fix-framework.sh" */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/AudioKit.framework/fix-framework.sh\"";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CACB95D1E1AE65800777244 /* Sources */ = {
