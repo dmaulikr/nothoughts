@@ -17,9 +17,11 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
+	<string>3</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>No Thoughts uses AudioKit frameworks which has code that accesses the microphone, but the app itself never uses the microphone.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>hiramarupro-w4.otf</string>
@@ -44,7 +46,5 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>No Thoughts uses AudioKit frameworks which has code that accesses the microphone, but the app itself never uses the microphone.</string>
 </dict>
 </plist>
