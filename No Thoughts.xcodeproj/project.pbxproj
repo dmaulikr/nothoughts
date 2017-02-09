@@ -56,7 +56,7 @@
 /* Begin PBXCopyFilesBuildPhase section */
 		8C684E551E4901E300D10E4D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
@@ -241,6 +241,7 @@
 				8CACB95E1E1AE65800777244 /* Frameworks */,
 				8CACB95F1E1AE65800777244 /* Resources */,
 				8C684E551E4901E300D10E4D /* Embed Frameworks */,
+				8C601E6F1E4BA35100C4544E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -376,6 +377,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C601E6F1E4BA35100C4544E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/AudioKit.framework/fix-framework.sh\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8CACB95D1E1AE65800777244 /* Sources */ = {
@@ -555,6 +572,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.NoThoughts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -573,6 +591,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.RicardoNazario.NoThoughts;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -581,6 +600,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SGRW3864BW;
 				INFOPLIST_FILE = "Zen-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -596,6 +616,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SGRW3864BW;
 				INFOPLIST_FILE = "Zen-SwiftTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -610,6 +631,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SGRW3864BW;
 				INFOPLIST_FILE = "Zen-SwiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -624,6 +646,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = SGRW3864BW;
 				INFOPLIST_FILE = "Zen-SwiftUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
