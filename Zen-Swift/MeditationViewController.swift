@@ -45,6 +45,10 @@ class MeditationViewController: UIViewController {
             meditationTimer.invalidate()
         }
         
+        if (intervalTimer != nil) {
+            intervalTimer.invalidate()
+        }
+        
         self.dismiss(animated: true, completion: nil)
     }
     
