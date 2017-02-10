@@ -166,8 +166,9 @@ class MeditationViewController: UIViewController {
     
     func endMeditation() {
         
-        self.initializeBell()
+        self.playBell()
         UIApplication.shared.isIdleTimerDisabled = false
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidLoad() {
